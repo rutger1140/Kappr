@@ -73,16 +73,59 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 /* =Fills
   *****************************************************************************/
 
-    .fill{
+    section.fill{
       width:780px;
       margin:0 auto;
       position:relative;
       z-index:10;
     }
+    #fill1{
+      width:780px;
+      height:450px;
+      /*height:1000px;*/
+      background:url(../img/fill1.jpg) no-repeat center 0 ;
+    }
     #fill2{
       margin-top:-50px;
-
+      width:780px;
+      height:530px;
+      background:url(../img/fill2.jpg) no-repeat center top ;
     }
+    #fill3{
+      width:780px;
+      height:690px;
+      background:url(../img/fill3.jpg) no-repeat center top ;
+    }
+
+    #fill4{
+      margin-top:180px;
+      width:780px;
+      height:590px;
+      background:url(../img/fill4.jpg) no-repeat center top ;
+    }
+
+
+    /* fixed heights */
+    #prijzen{
+      height:716px;
+      z-index:20;
+    }
+    #prijzen .wrap{
+      height:1000px;
+    }
+    #producten{
+      height:613px;
+    }
+    #producten .wrap{
+      height:1000px;
+    }
+    #locatie{
+      height:480px;
+    }
+    #contact{
+      height:370px;
+    }
+
 
 /* =Section defaults
   *****************************************************************************/
@@ -92,7 +135,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     min-height:370px;
     position:relative;
     z-index:20;
+    /*overflow:hidden;*/
   }
+  section .wrap{ position:relative; }
 
   section h1{
     text-align:center;
@@ -106,6 +151,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     text-align:center;
     margin:0 auto;
     padding:0;
+      font-family: "facitweb-n2","facitweb",sans-serif;
+      font-style: normal;
+      font-weight: 200;
   }
 
 
@@ -148,9 +196,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
   #prijzen{}
 
     #prijzen p{
-      font-family: "facitweb-n2","facitweb",sans-serif;
-      font-style: normal;
-      font-weight: 200;
+
     }
 
   #pricedata{
@@ -239,6 +285,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
   #locatie{
     background:#fd6a00 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAALElEQVQImWP8G8Xwn4GBgYFBgAEOmBgEoAIfkAUZoAJIEkxwAQZ07TAAVQ0A2k4HgAyYu9YAAAAASUVORK5CYII=) repeat;
     color:#fff;
+    height:480px;
   }
     #locatie h1{
       padding-top:70px;
@@ -260,6 +307,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
       height:389px; /* 423 */
       padding:16px 12px 14px 14px;
       margin-top:40px;
+      position:absolute;
     }
     aside,
     #mapcanvas{
