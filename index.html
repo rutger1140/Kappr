@@ -15,7 +15,9 @@
 
   <link rel="stylesheet" href="css/style.css">
   <script src="js/libs/modernizr-2.5.2.min.js"></script>
-  
+  <script type="text/javascript" src="http://use.typekit.com/rcy7zcg.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
 <body>
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
@@ -25,25 +27,29 @@
     <figure id="logo"><img src="img/logo.png"></figure>
     <nav role="navigation" id="access">
       <ul>
-        <li><a href="">Over ons</a></li>
-        <li><a href="">Prijzen</a></li>
-        <li><a href="">Producten</a></li>
-        <li><a href="">Locatie</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#overons">Over ons</a></li>
+        <li><a href="#prijzen">Prijzen</a></li>
+        <li><a href="#producten">Producten</a></li>
+        <li><a href="#locatie">Locatie</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <div id="main" role="main">
-    
+
     <section id="overons">
-      <div class="wrap">
+      <hgroup class="wrap">
         <h1>De nieuwe en <em>betaalbare</em> kapper.</h1>
         <h2>
           Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het
-          bekijken van de simpel van een pagina, afgeleid kwaliteit door de
+          bekijken van de <em>simpel</em> van een pagina, afgeleid kwaliteit door de
           tekstuele inhoud.
         </h2>
-      </div>
+      </hgroup>
+    </section>
+
+    <section id="fill1" class="fill">
+      <img src="img/fill1.jpg">
     </section>
 
     <section id="prijzen">
@@ -55,92 +61,167 @@
           bekijken van de simpel van een pagina, afgeleid kwaliteit door de
           tekstuele inhoud.
         </p>
-      
-      
-        <table>
-        	<caption>Here we assign header information to cells 
-        			by setting the scope attribute.
-        	</caption>
-        	<colgroup />
-        	<colgroup span="2" title="title" />
-        	<thead>
-        		<tr>
-        			<th scope="col">Name</th>
-        			<th scope="col">Side</th>
-        			<th scope="col">Role</th>
-        		</tr>
-        	</thead>
-        	<tfoot>
-        		<tr>
-        			<td>Darth Vader</td>
-        			<td>Dark</td>
-        			<td>Sith</td>
-        		</tr>
-        	</tfoot>
-        	<tbody>
-        		<tr>
-        			<td>Obi Wan Kenobi</td>
-        			<td>Light</td>
-        			<td>Jedi</td>
-        		</tr>
-        		<tr>
-        			<td>Greedo</td>
-        			<td>South</td>
-        			<td>Scumbag</td>
-        		</tr>
-        	</tbody>
-        </table>
-      
-      
-        <table>
-          <tr>
-            <th>Knippen</th>
-            <td>&euro; 19,50</td>
-          </tr>
-          <tr>
-            <th>Kind knippen t/m 12 jaar</th>
-            <td>&euro; 16,50</td>
-          </tr>
-          <tr>
-            <th>Kind knippen t/m 8 jaar</th>
-            <td>&euro; 14,50</td>
-          </tr>
-          <tr>
-            <th>Permanenten vanaf</th>
-            <td>&euro; 29,50</td>
-          </tr>
-          <tr>
-            <th>Permanenten compl. vanaf</th>
-            <td>&euro; 29,50</td>
-          </tr>
-          <tr>
-        </table>
+
+
+        <section id="pricedata">
+
+          <ul class="column first">
+
+            <li class="product">
+              <hgroup>
+                <h2>Knippen</h2>
+                <h3>&euro; 19,50</h3>
+              </hgroup>
+            </li>
+
+            <li class="product">
+              <hgroup>
+                <h2>Kind knippen t/m 12 jaar</h2>
+                <h3>&euro; 16,50</h3>
+              </hgroup>
+            </li>
+
+            <li class="product">
+              <hgroup>
+                <h2>Kind knippen t/m 8 jaar</h2>
+                <h3>&euro; 14,50</h3>
+              </hgroup>
+            </li>
+
+            <li class="product">
+              <hgroup>
+                <h2>Permanenten vanaf</h2>
+                <h3>&euro; 29,50</h3>
+              </hgroup>
+            </li>
+
+            <li class="product">
+              <hgroup>
+                <h2>Permanenten compl. vanaf</h2>
+                <h3>&euro; 59,50</h3>
+              </hgroup>
+              <em>Knippen, permanenten &amp; masker afwerken</em>
+            </li>
+
+          </ul>
+
+          <ul class="column">
+
+            <li class="product">
+              <hgroup>
+                <h2>Kleurspoeling</h2>
+                <h3>&euro; 19,50</h3>
+              </hgroup>
+              <em>Tijdelijke kleuring/opfrissen van uw kleur max 12 keer wassen.</em>
+            </li>
+
+            <li class="product">
+              <hgroup>
+                <h2>Kleuren vanaf</h2>
+                <h3>&euro; 24,50</h3>
+              </hgroup>
+            </li>
+
+            <li class="product">
+              <hgroup>
+                <h2>High / low lights vanaf</h2>
+                <h3>&euro; 29,50</h3>
+              </hgroup>
+            </li>
+
+            <li class="product">
+              <hgroup>
+                <h2>Kleuren compleet</h2>
+                <h3>&euro; 49,50</h3>
+              </hgroup>
+            </li>
+          </ul>
+
+          <em class="note">Alle behandelingen zijn incl. verzorgende shampoo, lak en versteviging.</em>
+        </div> <!-- #pricedata -->
+
       </div>
     </section>
-    
-    <section id="producten">
+
+    <section id="fill2" class="fill">
+      <img src="img/fill2.jpg">
+    </section>
+
+    <section id="producten" class="clearfix">
       <div class="wrap">
         <h1>Producten</h1>
 
-<p>Is it time for a parade honoring veterans who fought in Iraq and Afghanistan? link here. Rick Santorum's three-state sweep changes GOP race: link here. Battle escalates over Obama rule for contraception coverage at Catholic institutions (via CNNBelief): link here. Right now IvanCNN has the latest on the violence in Syria live on CNN. Read about it here: link here. The Americas and Asia will one day merge to become a ‘supercontinent’ (via CNNLightYears): link here. Vending machine on a Pennsylvania university campus dispenses emergency contraception: link here. Big states set to make mortgage deal. link here.</p>
-<p>United Nations' response to violence in Syria differs from its response in Libya. link here. U.S. initial jobless claims drop to 358,000, down 15,000 from previous week. One activist chronicles his daily, brutal hell in Syria, continually updated on link here. link here. Mississippi pardons to be challenged at court hearing today: link here. 10 reasons religious conservatives love Rick Santorum (via CNNBelief): link here. "These are very trying times," says Michele Bachmann to DonLemonCNN, in an interview airing live from CPAC, now on CNN. 10 states granted waivers from 'No Child Left Behind' requirements: link here. Signs of fatalism in Homs amid siege. link here. First new nuclear reactors OK'd in over 30 years. link here. Bus driver saves 6 kids off smoking bus before it bursts into flames - with video: link here. White House compromise on contraception rule is likely, source says: link here.</p>
-<p>Pres. Obama speaking live about the contraception decision. Watch on CNN now or link here. 120 ships trapped in Europe's icy waters as deadly cold lingers: link here. Rep. Nancy Pelosi takes on Stephen Colbert over Super PACs: link here. Right now WolfBlitzerCNN is interviewing RickSantorum live. He starts with Santorum's comments yesterday about women in combat. Just In: At least 100 car accidents due to icy conditions near Flint, MI - no fatalities reported. Pix to link here. if you can. Obama announces contraception compromise. link here. Next week, President Obama unveils his next budget. ErinBurnett from OutFrontCNN has an early look -- two minutes away. Thousands cheer Suu Kyi on campaign trail. link here. Singer Whitney Houston has died at the age of 48. CNN has the latest on air now and at link here. Whitney Houston pronounced dead at Beverly Hilton hotel at 6:55pmET - she was 48 years old: link here. Whitney Houston's death mourned as questions surrounding her death swirl: link here.</p>
-<p>Whitney Houston's daughter Bobbi Kristina Brown taken to hospital today. Find out the latest live now on CNN and link here. Amid clashes, Greek Parliament approves austerity measures: link here. Adele dominates Grammys - wins six awards and performs to standing ovation: link here. Jerry Sandusky can visit with some of his grandchildren, judge rules: link here. President Obama unveils his 2013 federal budget plan in Annandale, Virginia. Watch live on CNN now or here: link here. First Lady Michelle Obama writes for CNNOpinion: "Working together for the health of America's children": link here. U.S. to hold first talks with North Korea since Kim Jong Il's death: link here. Justice Stephen Breyer was robbed in the Caribbean last week by an intruder with a machete. CNN has the details now on CNNSitRoom. Houston's body being flown to New Jersey for funeral this week, source says. link here. Harsh condemnation for Syria at United Nations. link here. Radical cleric released from UK jail. link here.</p>
-<p>Whitney Houston's funeral set for Saturday afternoon in Newark, NJ: link here. Reporting from inside Syria: Fearful families prepare for a "bloody battle," ArwaCNN Damon reports: link here. Funeral for Whitney Houston set for Saturday. link here. New CNN/ORC poll: Santorum 34%, Romney 32%, Paul 16%, Gingrich 15%. Details now on CNNSitRoom live on CNN and on link here. China's Vice President visits White House - Pres. Obama stresses economic roles: link here. A paid killer in Syria describes his work. link here. Whitney Houston's death hits her native New Jersey hard. link here. Opposition: Syria blows up Homs oil pipeline. link here. More than 270 killed in Honduras prison blaze, fire official says. link here. via Cnnbrk.</p>
-<p>Iranian TV: "President Ahmadinejad to unveil Iran's nuclear achievements." Iran via Riccnn. FCC set to impose new limits on automated telemarketing calls: link here. Iran flaunts nuclear program - first Iranian-made fuel rods loaded in Tehran reactor: link here. Heavy snow damages Colosseum, historic monuments in Europe: link here. Authorities probing Whitney Houston prescriptions - coroner's office contacting doctors and pharmacies: link here.</p>
+        <p>
+          Bij kappr werken we met de producten van Wella Professionals. kappr
+          verkoopt Wella Professionals producten voor twee verschillende
+          prijzen. <em>Duidelijk en betaalbaar.</em>
+        </p>
+
+        <div id="products" class="clearfix">
+          <figure id="pricetags">
+            <img src="img/pricetags.jpg">
+          </figure>
+          <figure id="hairproducts">
+            <img src="img/hairproducts.png">
+          </figure>
+        </div>
+
       </div>
     </section>
-    
-    <section id="locatie">
-      
+
+    <section id="fill3" class="fill">
+      <img src="img/fill3.jpg">
     </section>
-    
+
+    <section id="locatie">
+      <div class="wrap">
+        <h1>Locatie</h1>
+        <p>
+          De salon van kappr staat in hartje Nieuwegein. De salon is eenvoudig te bereiken en heeft voldoende ruimte beschikbaar om je auto te parkeren. Parkeren bij de salon is gratis.
+        </p>
+
+        <div id="map">
+
+          <aside>
+            <h2 id="logosmall" class="ir">kappr</h2>
+            <address>
+              Abraham Kuyperpark 172<br>
+              3437 JD Nieuwegein
+            </address>
+
+            <div id="opening">
+              <h2>Openingstijden</h2>
+              <p>
+                maandag gesloten<br>
+                di t/m do 9.00-18.00<br>
+                vrijdag 9.00-20.00<br>
+                zaterdag 9.00-17.00<br>
+              </p>
+            </div>
+          </aside>
+          <div id="mapcanvas"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fill4" class="fill">
+      <img src="img/fill4.jpg">
+    </section>
+
     <section id="contact">
-      
+      <div class="wrap">
+        <h1>Contact</h1>
+        <p>
+          <strong>Vragen?</strong> Stuur ons een e-mail op
+          <a href="mailto:mail@kappr.nl">mail@kappr.nl</a>
+          of bel direct naar <em>030 6021675</em>
+        </p>
+      </div>
     </section>
   </div>
   <footer>
 
+    <p>2012 Copyright Kappr. Alle rechten voorbehouden | Design by <a href="http://monk-design.nl">Monk</a> | Code by <a href="http://lekkerduidelijk.nl">lekkerduidelijk</a> </p>
   </footer>
 
 
