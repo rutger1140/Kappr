@@ -54,10 +54,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     #access a{
       /*float:left;*/
       /*display:block;*/
-      padding:14px 6px;
+      margin:5px 0;
+      padding:4px 10px;
       font-size:18px;
       color:#222;
       text-decoration:none;
+      border-radius:16px;
+      background-color:#fff;
+    }
+    #access a.link-active{
+      background-color:#e2e2e2;
     }
 
   #access.sticky{
@@ -66,14 +72,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
   }
 
   #main.sticky{
-    margin-top:50px;
+    margin-top:75px;
   }
 
 
 /* =Fills
   *****************************************************************************/
 
-    section.fill{
+    div.fill{
       width:780px;
       margin:0 auto;
       position:relative;
@@ -92,38 +98,44 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
       background:url(../img/fill2.jpg) no-repeat center top ;
     }
     #fill3{
+      margin-top:-50px;
       width:780px;
       height:690px;
       background:url(../img/fill3.jpg) no-repeat center top ;
     }
 
     #fill4{
-      margin-top:180px;
       width:780px;
-      height:590px;
+      height:410px;
       background:url(../img/fill4.jpg) no-repeat center top ;
     }
 
+    #overons{
+      height:820px; /* 370 + 450 */
+    }
 
     /* fixed heights */
     #prijzen{
-      height:716px;
+      height:1246px;/* 716 + 530 */
+
       z-index:20;
     }
     #prijzen .wrap{
-      height:1000px;
+      /*height:1000px;*/
     }
     #producten{
-      height:613px;
+      height:1303px; /* 613 + 690 */
     }
     #producten .wrap{
-      height:1000px;
+
     }
     #locatie{
-      height:480px;
+      height:1100px; /* 690 + 410 */
     }
+    #locatie .wrap{ }
+
     #contact{
-      height:370px;
+      height:1370px;
     }
 
 
@@ -143,7 +155,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     text-align:center;
     font-size:55px;
     color:#010101;
-    margin:0;padding:70px 0 0 0;
+    margin:0;
+    padding:75px 0 0 0;
     font-weight:normal;
   }
   section p{
@@ -151,19 +164,18 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     text-align:center;
     margin:0 auto;
     padding:0;
-      font-family: "facitweb-n2","facitweb",sans-serif;
-      font-style: normal;
-      font-weight: 200;
+    font-family: "facitweb-n2","facitweb",sans-serif;
+    font-style: normal;
+    font-weight: 200;
   }
 
 
 /* =Over ons
   *****************************************************************************/
-  #overons{
+  #overons .content{
     background:#fd6a00 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAALElEQVQImWP8G8Xwn4GBgYFBgAEOmBgEoAIfkAUZoAJIEkxwAQZ07TAAVQ0A2k4HgAyYu9YAAAAASUVORK5CYII=) repeat;
     position:relative;
     z-index:10;
-    height:370px;
   }
     #overons hgroup{
       width:650px;
@@ -264,12 +276,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 /* =Producten
   *****************************************************************************/
 
-  #producten{
-    background:url(../img/products-foot.gif) repeat-x bottom left;
+  #producten .content{
+    background:url(../img/products-foot.png) repeat-x bottom left;
     padding-bottom:20px;
   }
   #products{
     margin-top:40px;
+    padding-bottom:20px;
   }
   #pricetags{
     position:relative;
@@ -284,8 +297,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 
   #locatie{
     background:#fd6a00 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAALElEQVQImWP8G8Xwn4GBgYFBgAEOmBgEoAIfkAUZoAJIEkxwAQZ07TAAVQ0A2k4HgAyYu9YAAAAASUVORK5CYII=) repeat;
+    background:url(../img/locatie.gif) repeat-x top;
     color:#fff;
-    height:480px;
   }
     #locatie h1{
       padding-top:70px;

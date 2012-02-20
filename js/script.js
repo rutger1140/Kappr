@@ -156,7 +156,27 @@ $(window).scroll(function() {
 
 */
 
-  $('#access').localScroll(800);
+  /*$.localScroll.hash({
+    queue:true,
+    duration:2500
+  })
+*/
+  $("#access").localScroll({
+    duration:800,
+    hash:true
+  });
+
+  /* Set a hash, when no hash is set */
+  var loadhash = document.location.hash.split("#")[1];
+  if(loadhash)
+    console.log("loadhash = "+loadhash);
+  else
+    document.location.hash = "#top"
+
+
+  //  console.log("no loadhash");
+  //if(hash = document.location.hash.split("#")[1]))
+  //$('#access').localScroll(800);
 
   //RepositionNav();
 
@@ -218,7 +238,75 @@ $(window).scroll(function() {
 
   });
 */
+/*
+  var waypointOptions ={
+    offset: "100px",
+    triggerOnce: true,
+    onlyOnScroll: true
 
+  }
+
+  $("#prijzen").waypoint(function() {
+      console.log("Prijzen");
+  }, {
+    offset: "400px",
+    //triggerOnce: true,
+    //onlyOnScroll: true
+  });
+
+  $("#producten").waypoint(function() {
+      console.log("Producten");
+  },{ offset: "10%"});
+
+  $("#locatie").waypoint(function() {
+      console.log("Locatie");
+  },{ offset: "10%"})
+
+  $("#contact").waypoint(function() {
+      console.log("Contact");
+  },{ offset: "10%"});*/
+
+/*
+  $('.top').addClass('hidden');
+  $.waypoints.settings.scrollThrottle = 30;
+  $('#wrapper').waypoint(function(event, direction) {
+    $('.top').toggleClass('hidden', direction === "up");
+  }, {
+    offset: '-100%'
+  }).find('#main-nav-holder').waypoint(function(event, direction) {
+    $(this).parent().toggleClass('sticky', direction === "down");
+    event.stopPropagation();
+  });
+*/
+/*
+  $('#access').waypoint(function(event, direction) {
+    $(this).parent().toggleClass('sticky', direction === "down");
+    event.stopPropagation();
+  });
+*/
+
+
+    // The same for all waypoints
+    $('body').delegate('section.chapter', 'waypoint.reached', function(event, direction) {
+        var $active = $(this);
+
+        if (direction === "up") {
+          console.log('direction is up');
+          $active = $active.prev('.chapter');
+          console.log("active is" +$active);
+        }
+        //console.log($active);
+        if (!$active.length) $active = $active.end();
+
+        $('.section-active').removeClass('section-active');
+        $active.addClass('section-active');
+
+        $('.link-active').removeClass('link-active');
+        $('a[href=#'+$active.attr('id')+']').addClass('link-active');
+    });
+
+    // Register each section as a waypoint.
+    $('section.chapter').waypoint({ offset: "85px" });
 
 
 });
