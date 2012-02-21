@@ -1,15 +1,13 @@
-/* Author:
+/**
+ * Kappr javascripts
+ * Uses: jQuery, Parallax, Waypoints, LocalScroll and more
+ * Author: Rutger Laurman (lekkerduidelijk.nl)
+ */
 
-*/
-
-
-
-
-
-
+/* Ready? Set? Go! */
 $(function() {
 
-  console.log("Loaded");
+  console.log("[i] Document ready");
 
   /* Google Maps */
   GmapLoad();
@@ -161,18 +159,20 @@ $(window).scroll(function() {
     duration:2500
   })
 */
+/*
   $("#access").localScroll({
     duration:800,
     hash:true
   });
-
+*/
   /* Set a hash, when no hash is set */
+  /*
   var loadhash = document.location.hash.split("#")[1];
   if(loadhash)
     console.log("loadhash = "+loadhash);
   else
     document.location.hash = "#top"
-
+*/
 
   //  console.log("no loadhash");
   //if(hash = document.location.hash.split("#")[1]))
@@ -184,6 +184,36 @@ $(window).scroll(function() {
 //    RepositionNav();
 //  });
 
+
+  // Wicked credit to
+  // http://www.zachstronaut.com/posts/2009/01/18/jquery-smooth-scroll-bugs.html
+  var scrollElement = 'html, body';
+  $('html, body').each(function () {
+    var initScrollTop = $(this).attr('scrollTop');
+    $(this).attr('scrollTop', initScrollTop + 1);
+    if ($(this).attr('scrollTop') == initScrollTop + 1) {
+      scrollElement = this.nodeName.toLowerCase();
+      $(this).attr('scrollTop', initScrollTop);
+      return false;
+    }
+  });
+
+  // Smooth scrolling for internal links
+  $("a[href^='#']").click(function(event) {
+    event.preventDefault();
+
+    var $this = $(this),
+    target = this.hash,
+    $target = $(target);
+
+    $(scrollElement).stop().animate({
+      'scrollTop': $target.offset().top
+    }, 800, 'swing', function() {
+      window.location.hash = target;
+    });
+
+  });
+
   //.parallax(xPosition, adjuster, inertia, outerHeight) options:
   //xPosition - Horizontal position of the element
   //adjuster - y position to start from
@@ -192,7 +222,13 @@ $(window).scroll(function() {
 
 
 
-  $("#fill1").parallax("50%", 400, 0.1, true);
+  //$("#fill1").parallax("50%", 400, 0.1, true);
+  //$("#fill1-scissor").parallax("50%", 400, 0.1, true);
+
+  //$("#fill1-dashedline").parallax("50%", 400, 0.1, true);
+
+  $("#fill1-shapes2").parallax("50%", 500, 0.3, true);
+  $("#fill1-shapes1").parallax("50%", 550, 0.7, true);
 
   $('#fill2').parallax("50%", 1500, 0.4, true);
 
@@ -201,6 +237,14 @@ $(window).scroll(function() {
   $("#fill4").parallax("50%", 4200, 0.4, true);
 
 
+  $(window).scroll(function() {
+    var offset = window.pageYOffset;
+
+    $('#fill1-scissor').css({
+      "top" : 10 + (offset/1)
+    });
+
+  })
 /*
 
   $(window).scroll(function() {

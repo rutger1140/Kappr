@@ -89,8 +89,19 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
       width:780px;
       height:450px;
       /*height:1000px;*/
-      background:url(../img/fill1.jpg) no-repeat center 0 ;
+      /*background:url(../img/fill1.jpg) no-repeat center 0 ;*/
     }
+      #fill1 div{
+        position:absolute;
+      }
+        #fill1-scissor{ width:49px; height:61px; background:url(../img/fill1-scissor.png) no-repeat top left; }
+
+        #fill1-dashedline{ width:780px; height:450px; background:url(../img/fill1-dashedline.png) no-repeat top left; }
+
+        #fill1-shapes2{ width:780px; height:450px;background:url(../img/fill1-shapes2.png) no-repeat 50% 14px; }
+
+        #fill1-shapes1{ width:780px; height:450px; background:url(../img/fill1-shapes1.png) no-repeat 50% 67px;}
+
     #fill2{
       margin-top:-50px;
       width:780px;
