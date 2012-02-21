@@ -227,22 +227,145 @@ $(window).scroll(function() {
 
   //$("#fill1-dashedline").parallax("50%", 400, 0.1, true);
 
-  $("#fill1-shapes2").parallax("50%", 500, 0.3, true);
-  $("#fill1-shapes1").parallax("50%", 550, 0.7, true);
+  $("#fill1-shapes2").parallax("50%", 500, 0.1, true);
+  $("#fill1-shapes1").parallax("50%", 550, 0.3, true);
 
-  $('#fill2').parallax("50%", 1500, 0.4, true);
+  $('#fill2').parallax("50%", 1500, -0.4, true);
 
   $("#fill3").parallax("50%", 2500, 0.3, true);
 
   $("#fill4").parallax("50%", 4200, 0.4, true);
 
 
+  $("#fill1-scissor").css({
+    "rotate": "-8deg"
+  })
+
   $(window).scroll(function() {
     var offset = window.pageYOffset;
 
-    $('#fill1-scissor').css({
-      "top" : 10 + (offset/1)
-    });
+    $("#pixels2").html((44+(offset/30))+"%");
+
+    if(offset<100){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (44+(offset/30))+"%",
+//        "rotate": "-8deg"
+      })
+    }
+
+    if(offset>=100 && offset <150 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (44+(offset/33))+"%",
+//        "rotate": "-4deg"
+      });
+    }
+
+    if(offset>=150 && offset <170 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (44+(offset/35))+"%",
+//        "rotate": "1deg"
+      });
+    }
+    if(offset>=170 && offset <190 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (44+(offset/37))+"%",
+//        "rotate": "4deg"
+      });
+    }
+
+    if(offset>=190 && offset <210 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (44+(offset/39))+"%",
+//        "rotate": "6deg"
+      });
+    }
+
+    if(offset>=210 && offset <220 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (44+(offset/42))+"%",
+//        "rotate": "9deg"
+      });
+    }
+
+    if(offset>=220 && offset <250 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (44+(offset/44))+"%",
+//        "rotate": "12deg"
+      });
+    }
+
+    if(offset>=250 && offset <290 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (44+(offset/48))+"%",
+//        "rotate": "14deg"
+      });
+    }
+
+    if(offset>=290 && offset <390 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (53-(offset/80))+"%",
+//        "rotate": "19deg"
+      });
+
+    }
+
+    if(offset>=390 && offset <410 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (53-(offset/77))+"%",
+//        "rotate": "23deg"
+      });
+    }
+
+    if(offset>=410 && offset <470 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (53-(offset/75))+"%",
+//        "rotate": "27deg"
+      });
+    }
+
+    if(offset>=470 && offset <520 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (53-(offset/73))+"%",
+//        "rotate": "23deg"
+      });
+    }
+
+    if(offset>=520 && offset <560 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (53-(offset/70))+"%",
+//        "rotate": "21deg"
+      });
+    }
+
+    if(offset>=560 && offset <610 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (38+(offset/75))+"%",
+//        "rotate": "17deg"
+      });
+    }
+
+    if(offset>=610 && offset <650 ){
+      $('#fill1-scissor').css({
+        "top" : -30 + (offset/1.6),
+        "left" : (38+(offset/80))+"%",
+//        "rotate": "12deg"
+      });
+    }
+
 
   })
 /*
