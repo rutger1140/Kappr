@@ -230,16 +230,37 @@ $(window).scroll(function() {
   $("#fill1-shapes2").parallax("50%", 500, 0.1, true);
   $("#fill1-shapes1").parallax("50%", 550, 0.3, true);
 
-  $('#fill2').parallax("50%", 1500, -0.4, true);
+  //$('#fill2').parallax("50%", 1500, -0.4, true);
 
-  $("#fill3").parallax("50%", 2500, 0.3, true);
+//  $("#fill2-lines").parallax("50%", 1500, 0.1, true);
+  $("#fill2-comb").parallax("60%", 1600, -0.7, true);
+
+
+  $("#fill3").parallax("50%", 3500, -0.6, true);
 
   $("#fill4").parallax("50%", 4200, 0.4, true);
 
 
+  /* Prepare elements on page */
   $("#fill1-scissor").css({
     "rotate": "-8deg"
   })
+
+  // Start hairproducts hidden
+  $("#hairproducts").css({
+    "opacity": 0,
+    "left":"588px"
+  });
+
+  // Set circles to small
+  $('#fill3-styling').transition({
+    opacity:0,
+    scale: 0.1
+  });
+  $('#fill3-care').transition({
+    opacity:0,
+    scale: 0.1
+  });
 
   $(window).scroll(function() {
     var offset = window.pageYOffset;
@@ -355,64 +376,53 @@ $(window).scroll(function() {
         "top" : -30 + (offset/1.6),
         "left" : (38+(offset/75))+"%",
 //        "rotate": "17deg"
-      });
+      })
     }
 
-    if(offset>=610 && offset <650 ){
+    if(offset>=610 && offset <750 ){
       $('#fill1-scissor').css({
         "top" : -30 + (offset/1.6),
         "left" : (38+(offset/80))+"%",
 //        "rotate": "12deg"
       });
+
     }
+
+
+    if(offset>2200){
+
+      console.log("Producten start");
+
+      $("#hairproducts").animate({
+        "left": "460px",
+        "opacity":1
+      },1500,'easeOutSine');
+
+    
+      $('#fill3-styling').transition({
+        opacity:1,
+        scale: 1
+      },200,'out');
+      $('#fill3-care').transition({
+        opacity:1,
+        scale: 1
+      },300,'out');
+
+
+    }
+
 
 
   })
 /*
 
-  $(window).scroll(function() {
-    var offset = window.pageYOffset;
-
-    $('#prijzen .wrap').css({
-      "top" : (-15+(offset/30))+"%"
-    });
-
- // UI DESIGNER
-    $('#producten .wrap').css({
-      "top" : (-75+(offset/30))+"%"
-    });
-
-    $('#products').css({
-      "top" : -2500 + (offset/1.6)
-    });
-
-
- // WEB DESIGNER
-    $('#locatie .wrap').css({
-      "top" : (-60+(offset/30))+"%"
-    });
-
-
-  // HOW WE WORK
-    $('#contact .wrap').css({
-      "top" : (-80+(offset/50))+"%"
-    });
-
-
-
-
-
-
-  });
-*/
-/*
   var waypointOptions ={
     offset: "100px",
     triggerOnce: true,
     onlyOnScroll: true
 
-  }
-
+  }*/
+/*
   $("#prijzen").waypoint(function() {
       console.log("Prijzen");
   }, {
@@ -420,11 +430,11 @@ $(window).scroll(function() {
     //triggerOnce: true,
     //onlyOnScroll: true
   });
-
+*//*
   $("#producten").waypoint(function() {
       console.log("Producten");
-  },{ offset: "10%"});
-
+  },{ offset: "1400px"});*/
+/*
   $("#locatie").waypoint(function() {
       console.log("Locatie");
   },{ offset: "10%"})
