@@ -12,32 +12,30 @@ $(function() {
   /* Google Maps */
   GmapLoad();
 
-
-/*
-  $("#access").localScroll({
-    duration:800,
-    hash:true
+  $.preload([
+    "img/block.png","img/fill1-dashedline.png","img/fill1-scissor.png",
+    "img/fill1-shapes1.png","img/fill1-shapes2.png","img/fill1.jpg",
+    "img/fill2-comb.png","img/fill2-lines.jpg","img/fill2.jpg",
+    "img/fill3-care.png","img/fill3-circles.png","img/fill3-styling.png",
+    "img/fill3.jpg","img/fill4-circle1.png","img/fill4-circle2.png",
+    "img/fill4-circleblur.png","img/fill4-circlesharp.png",
+    "img/fill4.jpg","img/fillmask.png","img/footer-shadow.jpg",
+    "img/hairproducts.png","img/locatie.gif","img/logo.png",
+    "img/logosmall.png","img/mapaside-trans.png","img/mapcanvas.jpg",
+    "img/mapicon.png","img/pricetags.jpg","img/products-foot.png",
+  ], {
+    init: function(loaded, total) {
+      $("#loading").html("Loaded: "+loaded+"/"+total);
+    },
+    loaded: function(img, loaded, total) {
+      $("#loading").html("Loaded: "+loaded+"/"+total);
+    },
+    loaded_all: function(loaded, total) {
+      $("#loading").fadeOut(1000);
+      $("#wrap").animate({opacity:"1"},3500)
+      console.log("[i] Content loaded");
+    }
   });
-*/
-  /* Set a hash, when no hash is set */
-  /*
-  var loadhash = document.location.hash.split("#")[1];
-  if(loadhash)
-    console.log("loadhash = "+loadhash);
-  else
-    document.location.hash = "#top"
-*/
-
-  //  console.log("no loadhash");
-  //if(hash = document.location.hash.split("#")[1]))
-  //$('#access').localScroll(800);
-
-  //RepositionNav();
-
-  //$(window).resize(function(){
-//    RepositionNav();
-//  });
-
 
   // Wicked credit to
   // http://www.zachstronaut.com/posts/2009/01/18/jquery-smooth-scroll-bugs.html
@@ -82,9 +80,6 @@ $(function() {
   $("#fill1-shapes2").parallax("50%", 500, 0.1, true);
   $("#fill1-shapes1").parallax("50%", 550, 0.3, true);
 
-  //$('#fill2').parallax("50%", 1500, -0.4, true);
-
-//  $("#fill2-lines").parallax("50%", 1500, 0.1, true);
   $("#fill2-comb").parallax("60%", 2000, -0.7, true);
 
 
@@ -95,8 +90,6 @@ $(function() {
 
   $("#fill4-circle1").parallax("80px", 4300, -0.5, true);
   $("#fill4-circle2").parallax("530px", 4250, -0.3, true);
-
-  //$("#fill4").parallax("50%", 4200, 0.4, true);
 
 
   /* Prepare elements on page */
@@ -120,10 +113,10 @@ $(function() {
     scale: 0.1
   });
 
-  $(window).scroll(function() {
-    var offset = window.pageYOffset;
 
-    $("#pixels2").html((44+(offset/30))+"%");
+  $(window).scroll(function() {
+    
+    var offset = $(window).scrollTop(); //position of the scrollbar
 
     if(offset<100){
       $('#fill1-scissor').css({
@@ -234,14 +227,11 @@ $(function() {
 
     if(offset>2300){
 
-      console.log("Producten start");
-
       $("#hairproducts").animate({
         "left": "460px",
         "opacity":1
       },1500,'easeOutSine');
-
-    
+ 
       $('#fill3-styling').transition({
         opacity:1,
         scale: 1
@@ -251,59 +241,9 @@ $(function() {
         scale: 1
       },300,'out');
 
-
     }
 
-
-
   })
-/*
-
-  var waypointOptions ={
-    offset: "100px",
-    triggerOnce: true,
-    onlyOnScroll: true
-
-  }*/
-/*
-  $("#prijzen").waypoint(function() {
-      console.log("Prijzen");
-  }, {
-    offset: "400px",
-    //triggerOnce: true,
-    //onlyOnScroll: true
-  });
-*//*
-  $("#producten").waypoint(function() {
-      console.log("Producten");
-  },{ offset: "1400px"});*/
-/*
-  $("#locatie").waypoint(function() {
-      console.log("Locatie");
-  },{ offset: "10%"})
-
-  $("#contact").waypoint(function() {
-      console.log("Contact");
-  },{ offset: "10%"});*/
-
-/*
-  $('.top').addClass('hidden');
-  $.waypoints.settings.scrollThrottle = 30;
-  $('#wrapper').waypoint(function(event, direction) {
-    $('.top').toggleClass('hidden', direction === "up");
-  }, {
-    offset: '-100%'
-  }).find('#main-nav-holder').waypoint(function(event, direction) {
-    $(this).parent().toggleClass('sticky', direction === "down");
-    event.stopPropagation();
-  });
-*/
-/*
-  $('#access').waypoint(function(event, direction) {
-    $(this).parent().toggleClass('sticky', direction === "down");
-    event.stopPropagation();
-  });
-*/
 
 
     // The same for all waypoints
@@ -311,9 +251,7 @@ $(function() {
         var $active = $(this);
 
         if (direction === "up") {
-          console.log('direction is up');
           $active = $active.prev('.chapter');
-          console.log("active is" +$active);
         }
         //console.log($active);
         if (!$active.length) $active = $active.end();
@@ -364,7 +302,6 @@ function GmapInit() {
     icon:kapprIcon
   });
   $("#locatie").addClass("hasmap");
-    //google.maps.event.addListener(marker, 'click', toggleBounce);
 
 }
 
