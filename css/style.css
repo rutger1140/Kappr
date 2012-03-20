@@ -51,7 +51,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
  ******************************************************************************/
   #access{
     background-color:#fff;
-    height:55px;
+    height:50px;
     width:100%;
     text-align:center;
     border-top:1px solid #dfdfe1;
@@ -71,8 +71,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
       line-height:2.8;
     }
     #access a{
-      /*float:left;*/
-      /*display:block;*/
       margin:5px 0;
       padding:4px 10px;
       font-size:18px;
@@ -81,6 +79,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
       border-radius:16px;
       background-color:#fff;
     }
+    #access a:hover,
     #access a.link-active{
       color:#FD6A00;
     }
@@ -271,7 +270,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     }
 
     #contact{
-      height:970px;
+      height:370px;
     }
 
 
@@ -294,6 +293,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     margin:0;
     padding:75px 0 0 0;
     font-weight:normal;
+    letter-spacing:-0.05em;
   }
   section p{
     width:500px;
@@ -329,7 +329,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     #overons h1{
       font-size:58px;
       line-height:53px;
+      width:550px;
+      font-family: "adelle",serif;
+      font-style: normal;
+      font-weight: 600;
     }
+      #overons h1 em{
+        font-family: "adelle",serif;
+        font-style: italic;
+        font-weight: 600;
+      }
     #overons h2{
       color:#fff;
       padding-top:10px;
@@ -367,11 +376,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     }
     #pricedata .column{
       float:right;
-      margin-right:10px;
+      
       width:330px;
     }
     #pricedata .column.first{
       float:left;
+      margin-right:10px;
     }
 
     #pricedata hgroup{
@@ -424,7 +434,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     #products{
       margin-top:40px;
       padding-bottom:20px;
-      height:350px;
+      height:420px; /* 350 */
       width:780px;
       overflow:hidden;
     }
@@ -435,6 +445,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     #hairproducts{
       position:absolute;
       z-index:30;
+      margin-top:70px;
     }
 
 /* =Locatie
