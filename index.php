@@ -204,11 +204,14 @@
       <p><?php echo date("Y") ?> Copyright Kappr. Alle rechten voorbehouden | Design by <a href="http://monk-design.nl">Monk</a> | Code by <a href="http://lekkerduidelijk.nl">lekkerduidelijk</a> </p>
     </footer>
   </div>
-  <div id="loading"></div>
+  <?php /*   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  
   <script src="js/plugins.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
+  */ ?>
+  <script src="js/all.min.js"></script>
   <script type="text/javascript" src="http://use.typekit.com/rcy7zcg.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script>
