@@ -1,6 +1,6 @@
-/**
- * Kappr ~ De betaalbare kapper
- * @author: Rutger Laurman
+/*!
+ * kappr ~ De betaalbare kapper
+ * @author: Rutger Laurman (lekkerduidelijk.nl)
  */
 
 /* =HTML5 Boilerplate
@@ -31,19 +31,19 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
   .js #wrap{
     opacity:0;
   }
-  .js #loading{
-    width:100%;
-    height:100%;
-    position: absolute;
-    top:0;
-    left:0;
-    background-color:#f5f5f5;
-  }
 
   .wf-loading {
-    visibility: hidden;
   }
-  .wf-active{
+
+  .lt-ie9.wf-loading nav a,
+  .lt-ie9.wf-loading section p{ visibility: visible; }
+
+  .wf-loading nav a,
+  .wf-loading section p{
+    visibility: hidden; 
+  }
+
+  .wf-active nav a{
     visibility: visible;
   }
 
@@ -447,6 +447,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
       z-index:30;
       margin-top:70px;
     }
+    /*/.lt-ie9 #hairproducts{ background:url(../img/hairproducts.gif) no-repeat top left; }
+    .lt-ie9 #hairproducts img{ display:none; } */
 
 /* =Locatie
   *****************************************************************************/

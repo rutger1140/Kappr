@@ -3,7 +3,7 @@
  * Uses: jQuery, Parallax, Waypoints, LocalScroll and more
  * Author: Rutger Laurman (lekkerduidelijk.nl)
  */
-
+/*! kappr - javascripts by Rutger Laurman ~ lekkerduidelijk.nl */
 /* Ready? Set? Go! */
 $(function() {
 
@@ -18,24 +18,25 @@ $(function() {
     "img/fill3.jpg","img/fill4-circle1.png","img/fill4-circle2.png",
     "img/fill4-circleblur.png","img/fill4-circlesharp.png",
     "img/fill4.jpg","img/fillmask.png","img/footer-shadow.jpg",
-    "img/hairproducts.png","img/locatie.gif","img/logo.png",
+    "img/hairproducts.gif","img/locatie.gif","img/logo.png",
     "img/logosmall.png","img/mapaside-trans.png","img/mapcanvas.jpg",
     "img/mapicon.png","img/pricetags.jpg","img/products-foot.png",
   ], {
     init: function(loaded, total) {
-      $("#loading").html("Loaded: "+loaded+"/"+total);
+      //$("#loading").html("Laden... "+loaded+"/"+total);
     },
     loaded: function(img, loaded, total) {
-      $("#loading").html("Loaded: "+loaded+"/"+total);
+      //$("#loading").html("Laden... "+loaded+"/"+total);
     },
     loaded_all: function(loaded, total) {
-      $("#loading").fadeOut(1000);
+      //$("#loading").fadeOut(1000);
       $("#wrap").animate({opacity:"1"},3500)
     }
   });
 
   // Wicked credit to
   // http://www.zachstronaut.com/posts/2009/01/18/jquery-smooth-scroll-bugs.html
+  
   var scrollElement = 'html, body';
   $('html, body').each(function () {
     var initScrollTop = $(this).attr('scrollTop');
@@ -252,9 +253,9 @@ $(function() {
 var map;
 
 function GmapInit() {
-  var kappr = new google.maps.LatLng(52.054153,5.079889);
-  var mapcenter = new google.maps.LatLng(52.054153,5.077989);
-  var myOptions = {
+  kappr = new google.maps.LatLng(52.054153,5.079889);
+  mapcenter = new google.maps.LatLng(52.054153,5.077989);
+  myOptions = {
     zoom: 16,
     center: mapcenter,
     disableDefaultUI: true,

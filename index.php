@@ -1,3 +1,12 @@
+<?php
+/**
+ * kappr - single page website with parallax effects
+ * @author: Rutger Laurman (lekkerduideljk.nl)
+ *
+ */
+  // Set default timezone (OSX Lion patch)
+  date_default_timezone_set('Europe/Amsterdam'); 
+?>
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="nl"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="nl"> <![endif]-->
@@ -139,7 +148,7 @@
                 <div id="fill3-circles"></div>
               </figure>
               <figure id="hairproducts">
-                <img src="img/hairproducts.png">
+                <img src="img/hairproducts.gif">
               </figure>
             </div>
           </div>
@@ -199,7 +208,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
   <script src="js/plugins.min.js"></script>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
   <script type="text/javascript" src="http://use.typekit.com/rcy7zcg.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script>
