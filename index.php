@@ -15,7 +15,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>kappr ~ de betaalbare kapper</title>
+  <title>kappr ~ de nieuwe en betaalbare kapper</title>
   <meta name="description" content="kappr is de nieuwe en betaalbare kapper in Nieuwegein">
 
   <link type="text/plain" rel="author" href="humans.txt" />
