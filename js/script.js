@@ -7,8 +7,6 @@
 /* Ready? Set? Go! */
 $(function() {
 
-  console.log("[i] Document ready");
-
   /* Google Maps */
   GmapLoad();
 
@@ -33,7 +31,6 @@ $(function() {
     loaded_all: function(loaded, total) {
       $("#loading").fadeOut(1000);
       $("#wrap").animate({opacity:"1"},3500)
-      console.log("[i] Content loaded");
     }
   });
 
@@ -66,33 +63,18 @@ $(function() {
 
   });
 
-  //.parallax(xPosition, adjuster, inertia, outerHeight) options:
-  //xPosition - Horizontal position of the element
-  //adjuster - y position to start from
-  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-
-  //$("#fill1").parallax("50%", 400, 0.1, true);
-  //$("#fill1-scissor").parallax("50%", 400, 0.1, true);
-
-  //$("#fill1-dashedline").parallax("50%", 400, 0.1, true);
-
-  $("#fill1-shapes2").parallax("50%", 500, 0.1, true);
+  /* Parallax effects on fills */
+  $("#fill1-shapes2").parallax("50%", 500, -0.1, true);
   $("#fill1-shapes1").parallax("50%", 550, 0.3, true);
-
   $("#fill2-comb").parallax("60%", 2000, -0.7, true);
-
-
   $("#fill3").parallax("50%", 3800, -0.6, true);
-
   $("#fill4-circleblur").parallax("50%", 5400, -0.2, true);
   $("#fill4-circlesharp").parallax("50%", 5450, -0.1, true);
-
   $("#fill4-circle1").parallax("80px", 4300, -0.5, true);
   $("#fill4-circle2").parallax("530px", 4250, -0.3, true);
 
-
   /* Prepare elements on page */
+  // Rotate scissor
   $("#fill1-scissor").css({
     "rotate": "-8deg"
   })
@@ -103,7 +85,7 @@ $(function() {
     "left":"588px"
   });
 
-  // Set circles to small
+  // Set product price circles to small
   $('#fill3-styling').transition({
     opacity:0,
     scale: 0.1
@@ -114,6 +96,7 @@ $(function() {
   });
 
 
+  /* Set scroll event */
   $(window).scroll(function() {
     
     var offset = $(window).scrollTop(); //position of the scrollbar
@@ -221,7 +204,6 @@ $(function() {
         "top" : -30 + (offset/1.6),
         "left" : (38+(offset/80))+"%"
       });
-
     }
 
 
@@ -240,7 +222,6 @@ $(function() {
         opacity:1,
         scale: 1
       },300,'out');
-
     }
 
   })
@@ -253,7 +234,6 @@ $(function() {
         if (direction === "up") {
           $active = $active.prev('.chapter');
         }
-        //console.log($active);
         if (!$active.length) $active = $active.end();
 
         $('.section-active').removeClass('section-active');

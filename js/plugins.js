@@ -33,7 +33,7 @@ window.log = function f(){ log.history = log.history || []; log.history.push(arg
 }(jQuery));
 
 
-/*
+/*!
 Plugin: jQuery Parallax
 Version 1.1
 Author: Ian Lunn
@@ -109,7 +109,7 @@ function inView(pos, element){
 })( jQuery );
 
 
-/*
+/*!
 jQuery Waypoints - v1.1.4
 Copyright (c) 2011-2012 Caleb Troughton
 Dual licensed under the MIT license and GPL license.
