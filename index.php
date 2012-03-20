@@ -14,7 +14,7 @@
   <meta name="author" content="lekkerduidelijk.nl">
   <meta name="viewport" content="width=960">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 
 </head>
