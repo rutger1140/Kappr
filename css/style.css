@@ -29,23 +29,33 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     margin:20px auto;
   }
   .js #wrap{
-    opacity:0;
+    visibility: hidden;
   }
-
-  .wf-loading {
+  .js #loader{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color:#fff;
   }
+    .js #loader #loading{ 
+      position: relative;
+      margin: -100px auto 0 auto; width:100px; display:block; 
+    }
 
+/*
   .lt-ie9.wf-loading nav a,
-  .lt-ie9.wf-loading section p{ visibility: visible; }
-
+  .lt-ie9.wf-loading section p{ visibility: visible; }*/
+/*
   .wf-loading nav a,
   .wf-loading section p{
     visibility: hidden; 
-  }
-
+  }*/
+/*
   .wf-active nav a{
     visibility: visible;
-  }
+  }*/
 
 /* =Navigation
  ******************************************************************************/
@@ -180,7 +190,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 
 
     #fill3{
-      margin-top:-50px;
+      margin-top:-90px;
       width:780px;
       height:710px;
       background:url(../img/fill3.jpg) no-repeat 50% -340px;
@@ -217,6 +227,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
       width:780px;
       height:890px;
       background:url(../img/fill4.jpg) no-repeat center top ;
+      margin-top:-30px;
     }
       #fill4 div{ position: absolute; }
       #fill4 .fillmask{
@@ -508,6 +519,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
         background:url(../img/logosmall.png) no-repeat top left;
         width:91px;
         height:34px;
+        cursor: help;
       }
 
     #opening{}

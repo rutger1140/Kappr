@@ -220,11 +220,12 @@ $devmode = false;
       <p><?php echo date("Y") ?> Copyright Kappr. Alle rechten voorbehouden | Design by <a href="http://monk-design.nl">Monk</a> | Code by <a href="http://lekkerduidelijk.nl">lekkerduidelijk</a> </p>
     </footer>
   </div>
+  <div id="loader"><span id="loading"><img src="img/loaderlogo.gif" alt="kappr"><img src="img/loader.gif" alt="Laden..."></span></div>
 <?php if($devmode): ?>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-  <script src="js/plugins.min.js"></script>
-  <script src="js/script.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
 <?php else : ?>
   <script src="js/all.min.js"></script>
 <?php endif; ?>

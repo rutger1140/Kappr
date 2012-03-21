@@ -7,8 +7,10 @@
 /* Ready? Set? Go! */
 $(function() {
 
-  /* Google Maps */
-  GmapLoad();
+  $("body").addClass("loading");
+
+  $("#wrap").css({visibility:'hidden'});
+  $("#loading").delay(200).animate({ marginTop:'50px'},300);
 
   $.preload([
     "img/block.png","img/priceblock.png","img/fill1-dashedline.png",
@@ -20,7 +22,7 @@ $(function() {
     "img/fill4.jpg","img/fillmask.png","img/footer-shadow.jpg",
     "img/hairproducts.gif","img/locatie.gif","img/logo.png",
     "img/logosmall.png","img/mapaside-trans.png","img/mapcanvas.jpg",
-    "img/mapicon.png","img/pricetags.jpg","img/products-foot.png",
+    "img/mapicon.png","img/pricetags.jpg","img/products-foot.png"
   ], {
     init: function(loaded, total) {
       //$("#loading").html("Laden... "+loaded+"/"+total);
@@ -29,10 +31,23 @@ $(function() {
       //$("#loading").html("Laden... "+loaded+"/"+total);
     },
     loaded_all: function(loaded, total) {
-      //$("#loading").fadeOut(1000);
-      $("#wrap").animate({opacity:"1"},1500)
+      
+      $("#loading").delay(900).animate({ 
+        marginTop:'400px',
+        opacity: '0'
+      },300);
+
+      $("#loader").delay(900).fadeOut(1500,function(){
+        //$("#wrap").height($(document).height());
+        $("#wrap").hide().css({visibility:'visible'}).fadeIn(2500);
+      })
+      $("body").removeClass("loading");
+      /* Google Maps */
+      GmapLoad();   
     }
   });
+
+  
 
   // Wicked credit to
   // http://www.zachstronaut.com/posts/2009/01/18/jquery-smooth-scroll-bugs.html
@@ -293,7 +308,9 @@ function GmapInit() {
     icon:kapprIcon
   });
   $("#locatie").addClass("hasmap");
+
 }
+
 
 /* Click event on small logo, it centers the map back */
 $("#logosmall").click(function(){
@@ -310,6 +327,8 @@ $("#map").waypoint(function(event,direction){
 function animateMarker(){
   marker.setAnimation(google.maps.Animation.DROP);
 }
+
+
 
 function GmapLoad() {
   var script = document.createElement("script");
