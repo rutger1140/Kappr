@@ -11,9 +11,9 @@ $(function() {
   GmapLoad();
 
   $.preload([
-    "img/block.png","img/fill1-dashedline.png","img/fill1-scissor.png",
-    "img/fill1-shapes1.png","img/fill1-shapes2.png","img/fill1.jpg",
-    "img/fill2-comb.png","img/fill2-lines.jpg","img/fill2.jpg",
+    "img/block.png","img/priceblock.png","img/fill1-dashedline.png",
+    "img/fill1-scissor.png","img/fill1-shapes1.png","img/fill1-shapes2.png",
+    "img/fill1.jpg","img/fill2-comb.png","img/fill2-lines.jpg","img/fill2.jpg",
     "img/fill3-care.png","img/fill3-circles.png","img/fill3-styling.png",
     "img/fill3.jpg","img/fill4-circle1.png","img/fill4-circle2.png",
     "img/fill4-circleblur.png","img/fill4-circlesharp.png",
@@ -30,7 +30,7 @@ $(function() {
     },
     loaded_all: function(loaded, total) {
       //$("#loading").fadeOut(1000);
-      $("#wrap").animate({opacity:"1"},3500)
+      $("#wrap").animate({opacity:"1"},1500)
     }
   });
 
@@ -81,21 +81,23 @@ $(function() {
   })
 
   // Start hairproducts hidden
-  $("#hairproducts").css({
-    "opacity": 0,
-    "left":"588px"
-  });
+  function resetHairProducts(){
+    $("#hairproducts").css({
+      "opacity": 0,
+      "left":"588px"
+    });
 
-  // Set product price circles to small
-  $('#fill3-styling').transition({
-    opacity:0,
-    scale: 0.1
-  });
-  $('#fill3-care').transition({
-    opacity:0,
-    scale: 0.1
-  });
-
+    // Set product price circles to small
+    $('#fill3-styling').transition({
+      opacity:0,
+      scale: 0.1
+    });
+    $('#fill3-care').transition({
+      opacity:0,
+      scale: 0.1
+    });
+  }
+  resetHairProducts();
 
   /* Set scroll event */
   $(window).scroll(function() {
@@ -207,9 +209,31 @@ $(function() {
       });
     }
 
+  })
 
-    if(offset>2300){
+  // The same for all waypoints
+  $('body').delegate('section.chapter', 'waypoint.reached', function(event, direction) {
+      var $active = $(this);
 
+      if (direction === "up") {
+        $active = $active.prev('.chapter');
+      }
+      if (!$active.length) $active = $active.end();
+
+      $('.section-active').removeClass('section-active');
+      $active.addClass('section-active');
+
+      $('.link-active').removeClass('link-active');
+      $('a[href=#'+$active.attr('id')+']').addClass('link-active');
+  });
+
+  // Register each section as a waypoint.
+  $('section.chapter').waypoint({ offset: "85px" });
+
+
+
+    $("#producten").waypoint(function(event,direction){
+      resetHairProducts();
       $("#hairproducts").animate({
         "left": "460px",
         "opacity":1
@@ -223,40 +247,27 @@ $(function() {
         opacity:1,
         scale: 1
       },300,'out');
-    }
-
-  })
-
-
-    // The same for all waypoints
-    $('body').delegate('section.chapter', 'waypoint.reached', function(event, direction) {
-        var $active = $(this);
-
-        if (direction === "up") {
-          $active = $active.prev('.chapter');
-        }
-        if (!$active.length) $active = $active.end();
-
-        $('.section-active').removeClass('section-active');
-        $active.addClass('section-active');
-
-        $('.link-active').removeClass('link-active');
-        $('a[href=#'+$active.attr('id')+']').addClass('link-active');
     });
 
-    // Register each section as a waypoint.
-    $('section.chapter').waypoint({ offset: "85px" });
+
+
+
+
+
+
+
 
 
 });
 
-var map;
+var map,mapcenter,zoomlevel,marker;
 
 function GmapInit() {
   kappr = new google.maps.LatLng(52.054153,5.079889);
   mapcenter = new google.maps.LatLng(52.054153,5.077989);
+  zoomlevel = 16;
   myOptions = {
-    zoom: 16,
+    zoom: zoomlevel,
     center: mapcenter,
     disableDefaultUI: true,
     disableDoubleClickZoom: true,
@@ -272,18 +283,32 @@ function GmapInit() {
   }
   map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
 
-
   var kapprIcon = "img/mapicon.png";
 
   marker = new google.maps.Marker({
     map:map,
-    draggable:true,
+    draggable:false,
     animation: google.maps.Animation.DROP,
     position: kappr,
     icon:kapprIcon
   });
   $("#locatie").addClass("hasmap");
+}
 
+/* Click event on small logo, it centers the map back */
+$("#logosmall").click(function(){
+  console.log("center it!");
+  map.panTo(mapcenter);
+  map.setZoom(zoomlevel);
+  animateMarker();  
+})
+
+$("#map").waypoint(function(event,direction){
+  animateMarker();
+})
+
+function animateMarker(){
+  marker.setAnimation(google.maps.Animation.DROP);
 }
 
 function GmapLoad() {

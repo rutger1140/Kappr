@@ -357,10 +357,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     }
 
   #pricedata{
-    background:url(../img/block.png) no-repeat top left;
+    background:url(../img/priceblock.png) no-repeat top left;
     width:704px; /* 784 */
-    height:343px; /* 423 */
-    padding:40px;
+    height:453px; /* 523 */
+    padding:30px 40px 40px 40px;
     margin:40px 0 0 0;
   }
     #pricedata ul{
@@ -414,8 +414,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     #pricedata .product em{ width:220px; text-align:left; }
 
     #pricedata em.note{
-      padding-top:40px;
+      padding-top:20px;
       clear:both;
+      width:500px;
+      margin:0 auto;
     }
 
 

@@ -4,8 +4,13 @@
  * @author: Rutger Laurman (lekkerduideljk.nl)
  *
  */
-  // Set default timezone (OSX Lion patch)
-  date_default_timezone_set('Europe/Amsterdam'); 
+
+// Set default timezone (OSX Lion patch)
+date_default_timezone_set('Europe/Amsterdam');
+
+// Toggle dev-mode (combined scripts)
+$devmode = false;
+
 ?>
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="nl"> <![endif]-->
@@ -21,14 +26,17 @@
   <link type="text/plain" rel="author" href="humans.txt" />
 
   <meta name="author" content="lekkerduidelijk.nl">
-  <meta name="viewport" content="width=960">
-
+  <meta name="viewport" content="width=810">
+<?php if ($devmode) : ?>
+  <link rel="stylesheet" href="css/style.css">
+<?php else : ?>
   <link rel="stylesheet" href="css/style.min.css">
+<?php endif; ?>
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 
 </head>
 <body>
-  <!--[if lt IE 8]><p class=chromeframe>Je browser is <em>oud!</em> <a href="http://browsehappy.com/">Upgrade naar een andere browsers</a> of <a href="http://www.google.com/chromeframe/?redirect=true">installeer Google Chrome Frame</a> om deze site goed te kunnen beleven.</p><![endif]-->
+  <!--[if lt IE 7]><iframe src="http://fronteers.nl/_tmp/ie6-upgrade/" frameborder="no" style="height: 81px; width: 100%; border: none;"></iframe><![endif]-->
   <div id="wrap">
     <header id="top">
       <figure id="logo"><img src="img/logo.png" alt="kappr - de betaalbare kapper!"></figure>
@@ -60,8 +68,8 @@
           <div class="wrap">
             <h1>Prijzen</h1>
             <p>
-              Bij kappr weet je altijd waar je aan toe bent, voor dat we je 
-              haarbehandeling starten laten we je weten wat het gaat kosten. We 
+              Bij kappr weet je altijd waar je aan toe bent, voor dat we je
+              haarbehandeling starten laten we je weten wat het gaat kosten. We
               houden niet van verrassingen, wat je ziet is wat je krijgt. <br>
               Simpel, eerlijk en duidelijk.
             </p>
@@ -72,24 +80,28 @@
                     <h2>Knippen</h2>
                     <h3>&euro; 19,50</h3>
                   </hgroup>
-                </li>
-                <li class="product">
-                  <hgroup>
-                    <h2>Kind knippen t/m 12 jaar</h2>
-                    <h3>&euro; 16,50</h3>
-                  </hgroup>
+                  <em>Wassen en knippen</em>
                 </li>
                 <li class="product">
                   <hgroup>
                     <h2>Kind knippen t/m 8 jaar</h2>
                     <h3>&euro; 14,50</h3>
                   </hgroup>
+                  <em>Excl. wassen: Knippen op schoon gewassen haar.</em>
+                </li>
+                <li class="product">
+                  <hgroup>
+                    <h2>Kind knippen t/m 12 jaar</h2>
+                    <h3>&euro; 16,50</h3>
+                  </hgroup>
+                  <em>Excl. wassen: Knippen op schoon gewassen haar.</em>
                 </li>
                 <li class="product">
                   <hgroup>
                     <h2>Permanenten vanaf</h2>
                     <h3>&euro; 29,50</h3>
                   </hgroup>
+                  <em>Permanenten van uw haar</em>
                 </li>
                 <li class="product">
                   <hgroup>
@@ -112,21 +124,25 @@
                     <h2>Kleuren vanaf</h2>
                     <h3>&euro; 24,50</h3>
                   </hgroup>
+                  <em>Uitgroei kleuren met een permanente haarkleuring.</em>
                 </li>
                 <li class="product">
                   <hgroup>
                     <h2>High / low lights vanaf</h2>
                     <h3>&euro; 29,50</h3>
                   </hgroup>
+                  <em>High of low lights met de spatel, kam of painting.</em>
                 </li>
                 <li class="product">
                   <hgroup>
                     <h2>Kleuren compleet</h2>
                     <h3>&euro; 49,50</h3>
                   </hgroup>
+                  <em>Wassen, knippen, kleuren, masker &amp; afwerken.</em>
                 </li>
               </ul>
-              <em class="note">Alle behandelingen zijn incl. verzorgende shampoo, lak en versteviging.</em>
+              <em class="note">Alle behandelingen zijn inclusief wassen van het haar
+              met verzorgende shampoo, lak en versteviging. Wij gebruiken uitsluitend producten van Wella Professionals.</em>
             </section>
           </div>
         </section>
@@ -160,9 +176,9 @@
           <div class="wrap">
             <h1>Locatie</h1>
             <p>
-              De salon van kappr staat in hartje Nieuwegein. De salon is eenvoudig
-              te bereiken en heeft voldoende ruimte beschikbaar om je auto te
-              parkeren. Parkeren bij de salon is gratis.
+              Kappr vind je in de wijk Galecop in Nieuwegein, net achter het 
+              wijkwinkelcentrum. Er is voldoende parkeer gelegenheid direct 
+              naast de salon.
             </p>
             <div id="map">
               <aside>
@@ -204,14 +220,14 @@
       <p><?php echo date("Y") ?> Copyright Kappr. Alle rechten voorbehouden | Design by <a href="http://monk-design.nl">Monk</a> | Code by <a href="http://lekkerduidelijk.nl">lekkerduidelijk</a> </p>
     </footer>
   </div>
-  <?php /*   
+<?php if($devmode): ?>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-  
   <script src="js/plugins.min.js"></script>
   <script src="js/script.min.js"></script>
-  */ ?>
+<?php else : ?>
   <script src="js/all.min.js"></script>
+<?php endif; ?>
   <script type="text/javascript" src="http://use.typekit.com/rcy7zcg.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script>
