@@ -26,7 +26,9 @@ $devmode = false;
   <link type="text/plain" rel="author" href="humans.txt" />
 
   <meta name="author" content="lekkerduidelijk.nl">
-  <meta name="viewport" content="width=810">
+  <meta name="viewport" content="width=900,maximum-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
 <?php if ($devmode) : ?>
   <link rel="stylesheet" href="css/style.css">
 <?php else : ?>
@@ -43,11 +45,11 @@ $devmode = false;
     </header>
     <nav role="navigation" id="access">
       <ul>
-        <li><a href="#top">Over ons</a></li>
-        <li><a href="#prijzen">Prijzen</a></li>
-        <li><a href="#producten">Producten</a></li>
-        <li><a href="#locatie">Locatie</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#top" title="De nieuwe en betaalbare kapper">Over ons</a></li>
+        <li><a href="#prijzen" title="Bij kappr weet je waar je aan toe bent">Prijzen</a></li>
+        <li><a href="#producten" title="Bij kappr werken we met Wella Professionals">Producten</a></li>
+        <li><a href="#locatie" title="Kappr vind je in de wijk Galecop in Nieuwegein">Locatie</a></li>
+        <li><a href="#contact" title="Stuur ons een e-mail of bel 030 6021675">Contact</a></li>
       </ul>
     </nav>
     <div id="main" role="main">

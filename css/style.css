@@ -188,7 +188,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
         background:url(../img/fill2-comb.png) no-repeat 60% -100px;
       }
 
-
     #fill3{
       margin-top:-90px;
       width:780px;
@@ -284,7 +283,24 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
       height:370px;
     }
 
+/* =Touch devices
+ ******************************************************************************/
+  .touch #fill2-comb{
+    background-position:60% 300px;
+  }
+  .touch #fill3{
+    background-position:50% -150px
+  }
 
+  .touch #hairproducts {
+    left: 460px
+  }
+  .touch #producten .wrap{
+    width:900px;
+  }
+
+
+  
 /* =Section defaults
   *****************************************************************************/
 
