@@ -19,12 +19,9 @@ $devmode = false;
 <!--[if gt IE 8]><!--> <html class="no-js" lang="nl"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-
   <title>kappr ~ de nieuwe en betaalbare kapper</title>
   <meta name="description" content="kappr is de nieuwe en betaalbare kapper in Nieuwegein">
-
   <link type="text/plain" rel="author" href="humans.txt" />
-
   <meta name="author" content="lekkerduidelijk.nl">
   <meta name="viewport" content="width=900,maximum-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -178,8 +175,8 @@ $devmode = false;
           <div class="wrap">
             <h1>Locatie</h1>
             <p>
-              Kappr vind je in de wijk Galecop in Nieuwegein, net achter het 
-              wijkwinkelcentrum. Er is voldoende parkeer gelegenheid direct 
+              Kappr vind je in de wijk Galecop in Nieuwegein, net achter het
+              wijkwinkelcentrum. Er is voldoende parkeer gelegenheid direct
               naast de salon.
             </p>
             <div id="map">
@@ -212,7 +209,7 @@ $devmode = false;
             <p>
               <strong>Vragen?</strong> Stuur ons een e-mail op
               <a href="mailto:mail@kappr.nl">mail@kappr.nl</a>
-              of bel direct naar <em>030 6021675</em>
+              of bel direct naar <em title="Telefoon nummer">030 6021675</em>
             </p>
           </div>
         </section>
@@ -234,7 +231,7 @@ $devmode = false;
   <script type="text/javascript" src="http://use.typekit.com/rcy7zcg.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    var _gaq=[['_setAccount','UA-30123690-1'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
