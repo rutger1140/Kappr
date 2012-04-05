@@ -177,7 +177,7 @@ $devmode = false;
             <h1>Locatie</h1>
             <p>
               Kappr vind je in de wijk Galecop in Nieuwegein, net achter het
-              wijkwinkelcentrum. Er is voldoende parkeer gelegenheid direct
+              wijkwinkelcentrum. Er is voldoende parkeergelegenheid direct
               naast de salon.
             </p>
             <div id="map">
