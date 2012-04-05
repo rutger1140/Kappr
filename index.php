@@ -191,9 +191,9 @@ $devmode = false;
                   <h2>Openingstijden</h2>
                   <p>
                     maandag gesloten<br>
-                    di t/m do 9.00-18.00<br>
+                    di t/m do 9.00-17.30<br>
                     vrijdag 9.00-20.00<br>
-                    zaterdag 9.00-17.00<br>
+                    zaterdag 9.00-16.30<br>
                   </p>
                 </div>
               </aside>
