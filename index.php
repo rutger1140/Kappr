@@ -19,8 +19,8 @@ $devmode = false;
 <!--[if gt IE 8]><!--> <html class="no-js" lang="nl"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>kappr ~ de nieuwe en betaalbare kapper</title>
-  <meta name="description" content="kappr is de nieuwe en betaalbare kapper in Nieuwegein">
+  <title>kappr ~ de nieuwe en betaalbare kapper in Galecop in Nieuwegein</title>
+  <meta name="description" content="kappr is de nieuwe en betaalbare kapper in de wijk Galecop in Nieuwegein">
   <link type="text/plain" rel="author" href="humans.txt" />
   <meta name="author" content="lekkerduidelijk.nl">
   <meta name="viewport" content="width=900,maximum-scale=1.0">
@@ -45,7 +45,7 @@ $devmode = false;
         <li><a href="#top" title="De nieuwe en betaalbare kapper">Over ons</a></li>
         <li><a href="#prijzen" title="Bij kappr weet je waar je aan toe bent">Prijzen</a></li>
         <li><a href="#producten" title="Bij kappr werken we met Wella Professionals">Producten</a></li>
-        <li><a href="#locatie" title="Kappr vind je in de wijk Galecop in Nieuwegein">Locatie</a></li>
+        <li><a href="#locatie" title="kappr vind je in de wijk Galecop in Nieuwegein">Locatie</a></li>
         <li><a href="#contact" title="Stuur ons een e-mail of bel 030 6021675">Contact</a></li>
       </ul>
     </nav>
@@ -141,8 +141,11 @@ $devmode = false;
                   <em>Wassen, knippen, kleuren, masker &amp; afwerken.</em>
                 </li>
               </ul>
-              <em class="note">Alle behandelingen zijn inclusief wassen van het haar
-              met verzorgende shampoo, lak en versteviging. Wij gebruiken uitsluitend producten van Wella Professionals.</em>
+              <em class="note">
+                Alle behandelingen zijn inclusief wassen van het haar met 
+                verzorgende shampoo, lak en versteviging. Wij gebruiken 
+                uitsluitend producten van Wella Professionals.
+              </em>
             </section>
           </div>
         </section>
@@ -159,8 +162,8 @@ $devmode = false;
             </p>
             <div id="products" class="clearfix">
               <figure id="pricetags">
-                <div id="fill3-care"></div>
-                <div id="fill3-styling"></div>
+                <div id="fill3-care" title="Care producten 9,95 euro"></div>
+                <div id="fill3-styling" title="Styling producten 11,95 euro"></div>
                 <div id="fill3-circles"></div>
               </figure>
               <figure id="hairproducts">
@@ -176,13 +179,13 @@ $devmode = false;
           <div class="wrap">
             <h1>Locatie</h1>
             <p>
-              Kappr vind je in de wijk Galecop in Nieuwegein, net achter het
+              kappr vind je in de wijk Galecop in Nieuwegein, net achter het
               wijkwinkelcentrum. Er is voldoende parkeergelegenheid direct
               naast de salon.
             </p>
             <div id="map">
               <aside>
-                <h2 id="logosmall" class="ir">kappr</h2>
+                <h2 id="logosmall" class="ir" title="kappr">kappr</h2>
                 <address>
                   Abraham Kuyperpark 172<br>
                   3437 JD Nieuwegein
@@ -209,7 +212,7 @@ $devmode = false;
             <h1>Contact</h1>
             <p>
               <strong>Vragen?</strong> Stuur ons een e-mail op
-              <a href="mailto:mail@kappr.nl">mail@kappr.nl</a>
+              <a href="mailto:mail@kappr.nl" title="Neem contact op via e-mail">mail@kappr.nl</a>
               of bel direct naar <em title="Telefoon nummer">030 6021675</em>
             </p>
           </div>
@@ -217,7 +220,7 @@ $devmode = false;
       </section>
     </div>
     <footer>
-      <p><?php echo date("Y") ?> Copyright Kappr. Alle rechten voorbehouden | Design by <a href="http://monk-design.nl">Monk</a> | Code by <a href="http://lekkerduidelijk.nl">lekkerduidelijk</a> </p>
+      <p><?php echo date("Y") ?> Copyright kappr. Alle rechten voorbehouden | Design by <a href="http://monk-design.nl" title="Monk Design is een creatieve designstudio in midden Nederland">Monk</a> | Code by <a href="http://lekkerduidelijk.nl" title="lekkerduidelijk ~ toegankelijke en gebruiksvriendelijke websites">lekkerduidelijk</a></p>
     </footer>
   </div>
   <div id="loader"><span id="loading"><img src="img/loaderlogo.gif" alt="kappr"><img src="img/loader.gif" alt="Laden..."></span></div>
