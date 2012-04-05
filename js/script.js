@@ -283,8 +283,8 @@ $(function() {
 var map,mapcenter,zoomlevel,marker;
 
 function GmapInit() {
-  kappr = new google.maps.LatLng(52.054153,5.079889);
-  mapcenter = new google.maps.LatLng(52.054153,5.077989);
+  kappr = new google.maps.LatLng(52.053902,5.079439);
+  mapcenter = new google.maps.LatLng(52.053902,5.079439);
   zoomlevel = 16;
   myOptions = {
     zoom: zoomlevel,
