@@ -55,8 +55,9 @@ $devmode = false;
           <hgroup class="wrap">
             <h1>De nieuwe en <em>betaalbare</em> kapper!</h1>
             <h2>
-              Bij de kappr houden we niet van fratsen. Gewoon een mooi kapsel voor een betaalbare prijs.
-              kappr maakt geen afspraken, je bent bij ons <em>altijd welkom</em>.
+              Bij kappr houden we niet van fratsen. Gewoon een mooi kapsel 
+              voor een betaalbare prijs.
+              Je bent <em>altijd</em> welkom, met en zonder afspraak.              
             </h2>
           </hgroup>
         </section>
