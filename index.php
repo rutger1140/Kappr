@@ -190,6 +190,7 @@ $devmode = false;
                   Abraham Kuyperpark 172<br>
                   3437 JD Nieuwegein
                 </address>
+                <span title="Telefoon nummer">T: 030 6021675</span><br>
                 <div id="opening">
                   <h2>Openingstijden</h2>
                   <p>
