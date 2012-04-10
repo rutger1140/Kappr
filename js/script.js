@@ -95,10 +95,6 @@ $(function() {
     $("#fill4-circle2").parallax("530px", 4250, -0.3, true);
 
     /* Prepare elements on page */
-    // Rotate scissor
-    $("#fill1-scissor").css({
-      "rotate": "-8deg"
-    })
 
     // Start hairproducts hidden
     function resetHairProducts(){
