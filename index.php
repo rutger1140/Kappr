@@ -13,26 +13,23 @@ $devmode = false;
 
 ?>
 <!doctype html>
+<?php /* We do not need this, for now
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="nl"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="nl"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="nl"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="nl"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="nl"> <!--<![endif]--> */ ?>
+<html class="no-js" lang="nl">
 <head>
   <meta charset="utf-8">
-  <title>kappr ~ de nieuwe en betaalbare kapper in Galecop in Nieuwegein</title>
+  <title>kappr ~ de nieuwe en betaalbare kapper in Galecop, Nieuwegein</title>
   <meta name="description" content="kappr is de nieuwe en betaalbare kapper in de wijk Galecop in Nieuwegein">
-  <link type="text/plain" rel="author" href="humans.txt" />
+  <link type="text/plain" rel="author" href="humans.txt">
   <meta name="author" content="lekkerduidelijk.nl">
   <meta name="viewport" content="width=900,maximum-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
-<?php if ($devmode) : ?>
-  <link rel="stylesheet" href="css/style.css">
-<?php else : ?>
-  <link rel="stylesheet" href="css/style.min.css">
-<?php endif; ?>
+  <?php if ($devmode) : ?><link rel="stylesheet" href="css/style.css">
+  <?php else : ?><link rel="stylesheet" href="css/style.min.css"><?php endif; ?>
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
-
 </head>
 <body>
   <!--[if lt IE 7]><iframe src="http://fronteers.nl/_tmp/ie6-upgrade/" frameborder="no" style="height: 81px; width: 100%; border: none;"></iframe><![endif]-->
@@ -221,7 +218,7 @@ $devmode = false;
       </section>
     </div>
     <footer>
-      <p><?php echo date("Y") ?> Copyright kappr. Alle rechten voorbehouden | Design by <a href="http://monk-design.nl" title="Monk Design is een creatieve designstudio in midden Nederland">Monk</a> | Code by <a href="http://lekkerduidelijk.nl" title="lekkerduidelijk ~ toegankelijke en gebruiksvriendelijke websites">lekkerduidelijk</a></p>
+      <p><?php echo date("Y") ?> Copyright kappr. Alle rechten voorbehouden | Design door <a href="http://monk-design.nl" title="Monk Design is een creatieve designstudio in midden Nederland">Monk Design</a> | Code door <a href="http://lekkerduidelijk.nl" title="lekkerduidelijk ~ toegankelijke en gebruiksvriendelijke websites">lekkerduidelijk</a></p>
     </footer>
   </div>
   <div id="loader"><span id="loading"><img src="img/loaderlogo.gif" alt="kappr"><img src="img/loader.gif" alt="Laden..."></span></div>
