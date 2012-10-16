@@ -21,7 +21,7 @@ $devmode = false;
 <html class="no-js" lang="nl">
 <head>
   <meta charset="utf-8">
-  <title>kappr ~ de nieuwe en betaalbare kapper in Galecop, Nieuwegein</title>
+  <title>kappr ~ de nieuwe en betaalbare kapper in Nieuwegein en Werkendam</title>
   <meta name="description" content="kappr is de nieuwe en betaalbare kapper in de wijk Galecop in Nieuwegein">
   <link type="text/plain" rel="author" href="humans.txt">
   <meta name="author" content="lekkerduidelijk.nl">
@@ -42,7 +42,7 @@ $devmode = false;
         <li><a href="#top" title="De nieuwe en betaalbare kapper">Over ons</a></li>
         <li><a href="#prijzen" title="Bij kappr weet je waar je aan toe bent">Prijzen</a></li>
         <li><a href="#producten" title="Bij kappr werken we met Wella Professionals">Producten</a></li>
-        <li><a href="#locatie" title="kappr vind je in de wijk Galecop in Nieuwegein">Locatie</a></li>
+        <li><a href="#locatie" title="kappr vind je in de wijk Galecop in Nieuwegein">Locaties</a></li>
         <li><a href="#contact" title="Stuur ons een e-mail of bel 030 6021675">Contact</a></li>
       </ul>
     </nav>
@@ -98,14 +98,14 @@ $devmode = false;
                     <h2>Permanenten vanaf</h2>
                     <h3>&euro; 29,50</h3>
                   </hgroup>
-                  <em>Permanenten van uw haar</em>
+                  <em>Permanenten van uw haar.</em>
                 </li>
                 <li class="product">
                   <hgroup>
                     <h2>Permanenten compl. vanaf</h2>
                     <h3>&euro; 59,50</h3>
                   </hgroup>
-                  <em>Knippen, permanenten &amp; masker afwerken</em>
+                  <em>Wassen, knippen, permanenten, masker &amp; afwerken.</em>
                 </li>
               </ul>
               <ul class="column">
@@ -132,8 +132,8 @@ $devmode = false;
                 </li>
                 <li class="product">
                   <hgroup>
-                    <h2>Kleuren compleet</h2>
-                    <h3>&euro; 49,50</h3>
+                    <h2>Kleuren compleet vanaf</h2>
+                    <h3>&euro; 52,50</h3>
                   </hgroup>
                   <em>Wassen, knippen, kleuren, masker &amp; afwerken.</em>
                 </li>
@@ -153,9 +153,8 @@ $devmode = false;
           <div class="wrap">
             <h1>Producten</h1>
             <p>
-              Bij kappr werken we met de producten van Wella Professionals. kappr
-              verkoopt Wella Professionals producten voor twee verschillende
-              prijzen. <em>Duidelijk en betaalbaar.</em>
+              Bij kappr werken wij met producten van Wella Professionals. Wij verkopen Wella Professionals producten voor de verzorging (care) en styling van uw haar (styling).
+Ook de prijzen zijn duidelijk bij kappr. Wij hanteren 3 prijzen voor onze producten: €10,50 €13,50 en €16,50.
             </p>
             <div id="products" class="clearfix">
               <figure id="pricetags">
@@ -174,12 +173,10 @@ $devmode = false;
       <section id="locatie" class="chapter">
         <section class="content">
           <div class="wrap">
-            <h1>Locatie</h1>
+            <h1>Locaties</h1>
             <p>
               kappr vind je in de wijk Galecop in Nieuwegein, net achter het
-              wijkwinkelcentrum. Er is voldoende parkeergelegenheid direct
-              naast de salon.
-            </p>
+            wijkwinkelcentrum en in het centrum van Werkendam. In de directe omgeving van de salons is gratis parkeergelegenheid. </p>
             <div id="map">
               <aside>
                 <h2 id="logosmall" class="ir" title="kappr">kappr</h2>
@@ -188,6 +185,12 @@ $devmode = false;
                   3437 JD Nieuwegein
                 </address>
                 <span title="Telefoon nummer">T: 030 6021675</span><br>
+                <br>
+                <address>
+                  Hoogstraat 107<br>
+                  4251 CK Werkendam
+                </address>
+                <span title="Telefoon nummer">T: 0183 503927</span><br>
                 <div id="opening">
                   <h2>Openingstijden</h2>
                   <p>
@@ -211,7 +214,7 @@ $devmode = false;
             <p>
               <strong>Vragen?</strong> Stuur ons een e-mail op
               <a href="mailto:mail@kappr.nl" title="Neem contact op via e-mail">mail@kappr.nl</a>
-              of bel direct naar <em title="Telefoon nummer">030 6021675</em>
+              of bel direct naar <em title="Telefoon nummer">030 6021675</em> (Nieuwegein)<em title="Telefoon nummer"><br>0183 503927</em> (Werkendam)</em>
             </p>
           </div>
         </section>
