@@ -22,13 +22,12 @@ $devmode = false;
 <head>
   <meta charset="utf-8">
   <title>kappr ~ de nieuwe en betaalbare kapper in Nieuwegein en Werkendam</title>
-  <meta name="description" content="kappr is de nieuwe en betaalbare kapper in de wijk Galecop in Nieuwegein">
+  <meta name="description" content="kappr is de nieuwe en betaalbare kapper in Nieuwegein en Werkendam">
   <link type="text/plain" rel="author" href="humans.txt">
   <meta name="author" content="lekkerduidelijk.nl">
   <meta name="viewport" content="width=900,maximum-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <?php if ($devmode) : ?><link rel="stylesheet" href="css/style.css">
-  <?php else : ?><link rel="stylesheet" href="css/style.min.css"><?php endif; ?>
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
@@ -52,9 +51,9 @@ $devmode = false;
           <hgroup class="wrap">
             <h1>De nieuwe en <em>betaalbare</em> kapper!</h1>
             <h2>
-              Bij kappr houden we niet van fratsen. Gewoon een mooi kapsel 
+              Bij kappr houden we niet van fratsen. Gewoon een mooi kapsel
               voor een betaalbare prijs.
-              Je bent <em>altijd</em> welkom, met en zonder afspraak.              
+              Je bent <em>altijd</em> welkom, met en zonder afspraak.
             </h2>
           </hgroup>
         </section>
@@ -139,8 +138,8 @@ $devmode = false;
                 </li>
               </ul>
               <em class="note">
-                Alle behandelingen zijn inclusief wassen van het haar met 
-                verzorgende shampoo, lak en versteviging. Wij gebruiken 
+                Alle behandelingen zijn inclusief wassen van het haar met
+                verzorgende shampoo, lak en versteviging. Wij gebruiken
                 uitsluitend producten van Wella Professionals.
               </em>
             </section>
@@ -153,8 +152,8 @@ $devmode = false;
           <div class="wrap">
             <h1>Producten</h1>
             <p>
-              Bij kappr werken wij met producten van Wella Professionals. Wij verkopen Wella Professionals producten voor de verzorging (care) en styling van uw haar (styling).
-Ook de prijzen zijn duidelijk bij kappr. Wij hanteren 3 prijzen voor onze producten: €10,50 €13,50 en €16,50.
+              Bij kappr werken we met producten van Wella Professionals. Wij verkopen Wella Professionals producten voor de verzorging (care) en styling van uw haar (styling).
+              Ook de prijzen zijn duidelijk bij kappr. Wij hanteren 3 prijzen voor onze producten: €10,50 €13,50 en €16,50.
             </p>
             <div id="products" class="clearfix">
               <figure id="pricetags">
@@ -176,17 +175,19 @@ Ook de prijzen zijn duidelijk bij kappr. Wij hanteren 3 prijzen voor onze produc
             <h1>Locaties</h1>
             <p>
               kappr vind je in de wijk Galecop in Nieuwegein, net achter het
-            wijkwinkelcentrum en in het centrum van Werkendam. In de directe omgeving van de salons is gratis parkeergelegenheid. </p>
+              wijkwinkelcentrum en in het centrum van Werkendam.
+              In de directe omgeving van de salons is gratis parkeergelegenheid.
+            </p>
             <div id="map">
               <aside>
                 <h2 id="logosmall" class="ir" title="kappr">kappr</h2>
-                <address>
+                <address id="location1">
                   Abraham Kuyperpark 172<br>
                   3437 JD Nieuwegein
                 </address>
                 <span title="Telefoon nummer">T: 030 6021675</span><br>
                 <br>
-                <address>
+                <address id="location2">
                   Hoogstraat 107<br>
                   4251 CK Werkendam
                 </address>
@@ -214,25 +215,19 @@ Ook de prijzen zijn duidelijk bij kappr. Wij hanteren 3 prijzen voor onze produc
             <p>
               <strong>Vragen?</strong> Stuur ons een e-mail op
               <a href="mailto:mail@kappr.nl" title="Neem contact op via e-mail">mail@kappr.nl</a>
-              of bel direct naar <em title="Telefoon nummer">030 6021675</em> (Nieuwegein)<em title="Telefoon nummer"><br>0183 503927</em> (Werkendam)</em>
+              of bel direct naar <em title="Telefoon nummer Nieuwegein">030 6021675</em> (Nieuwegein)<br>
+              <em title="Telefoon nummer Werkendam">0183 503927</em> (Werkendam)
             </p>
           </div>
         </section>
       </section>
     </div>
     <footer>
-      <p><?php echo date("Y") ?> Copyright kappr. Alle rechten voorbehouden | Design door <a href="http://monk-design.nl" title="Monk Design is een creatieve designstudio in midden Nederland">Monk Design</a> | Code door <a href="http://lekkerduidelijk.nl" title="lekkerduidelijk ~ toegankelijke en gebruiksvriendelijke websites">lekkerduidelijk</a></p>
+      <p><?php echo date("Y") ?> Copyright kappr. Alle rechten voorbehouden | Design door <a href="http://monk-design.nl" title="Monk Design is een creatieve designstudio in midden Nederland">Monk Design</a> | Code door <a href="http://lekkerduidelijk.nl" title="Lekkerduidelijk ~ gebruiksvriendelijke websites">Lekkerduidelijk</a></p>
     </footer>
   </div>
   <div id="loader"><span id="loading"><img src="img/loaderlogo.gif" alt="kappr"><img src="img/loader.gif" alt="Laden..."></span></div>
-<?php if($devmode): ?>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-<?php else : ?>
-  <script src="js/all.min.js"></script>
-<?php endif; ?>
+  <script src="js/all.js"></script>
   <script type="text/javascript" src="http://use.typekit.com/rcy7zcg.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script>

@@ -31,8 +31,8 @@ $(function() {
       //$("#loading").html("Laden... "+loaded+"/"+total);
     },
     loaded_all: function(loaded, total) {
-      
-      $("#loading").delay(900).animate({ 
+
+      $("#loading").delay(900).animate({
         marginTop:'400px',
         opacity: '0'
       },300);
@@ -43,7 +43,7 @@ $(function() {
       })
       $("body").removeClass("loading");
       /* Google Maps */
-      GmapLoad();   
+      GmapLoad();
     }
   });
 
@@ -81,9 +81,9 @@ $(function() {
   /* Start parallax and scroll events, disable touch devices */
   if(!$("html").hasClass('touch')){
 
-    // Set mainmenu sticky when out of viewport  
+    // Set mainmenu sticky when out of viewport
     $('#access').sticky();
-    
+
     /* Parallax effects on fills */
     $("#fill1-shapes2").parallax("50%", 500, -0.1, true);
     $("#fill1-shapes1").parallax("50%", 550, 0.3, true);
@@ -116,7 +116,7 @@ $(function() {
 
     /* Set scroll event */
     $(window).scroll(function() {
-      
+
       var offset = $(window).scrollTop(); //position of the scrollbar
 
       if(offset<100){
@@ -274,14 +274,18 @@ $(function() {
   // END TOUCH DISABLED
 
 
+
+
 });
 
-var map,mapcenter,zoomlevel,marker;
+var map,mapcenter,zoomlevel,marker1,marker2;
 
 function GmapInit() {
-  kappr = new google.maps.LatLng(52.053902,5.079439);
-  mapcenter = new google.maps.LatLng(52.053902,5.079439);
-  zoomlevel = 16;
+  kapprnieuwegein = new google.maps.LatLng(52.053902,5.079439);
+  kapprwerkendam =  new google.maps.LatLng(51.813616,4.891083);
+
+  mapcenter = new google.maps.LatLng(51.938339,4.639478);
+  zoomlevel = 9;
   myOptions = {
     zoom: zoomlevel,
     center: mapcenter,
@@ -301,13 +305,21 @@ function GmapInit() {
 
   var kapprIcon = "img/mapicon.png";
 
-  marker = new google.maps.Marker({
+  marker1 = new google.maps.Marker({
     map:map,
     draggable:false,
     animation: google.maps.Animation.DROP,
-    position: kappr,
+    position: kapprnieuwegein,
     icon:kapprIcon
   });
+  marker2 = new google.maps.Marker({
+    map:map,
+    draggable:false,
+    animation: google.maps.Animation.DROP,
+    position: kapprwerkendam,
+    icon:kapprIcon
+  });
+
   $("#locatie").addClass("hasmap");
 
 }
@@ -317,17 +329,23 @@ function GmapInit() {
 $("#logosmall").click(function(){
   map.panTo(mapcenter);
   map.setZoom(zoomlevel);
-  animateMarker();  
 })
-
+/*
 $("#map").waypoint(function(event,direction){
-  animateMarker();
-})
 
-function animateMarker(){
-  marker.setAnimation(google.maps.Animation.DROP);
+  setTimeout(animateMarker1, '500');
+  setTimeout(animateMarker2, '800');
+})
+*/
+function animateMarker1(){
+  marker1.setAnimation(google.maps.Animation.DROP);
+}
+function animateMarker2(){
+  marker2.setAnimation(google.maps.Animation.DROP);
 }
 
+$("#location1").mouseover(function(){ animateMarker1(); });
+$("#location2").mouseover(function(){ animateMarker2(); });
 
 
 function GmapLoad() {
