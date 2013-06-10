@@ -21,7 +21,7 @@ $devmode = false;
 <html class="no-js" lang="nl">
 <head>
   <meta charset="utf-8">
-  <title>kappr ~ de nieuwe en betaalbare kapper in Nieuwegein en Werkendam</title>
+  <title>kappr ~ de nieuwe en betaalbare kapper in Nieuwegein</title>
   <meta name="description" content="kappr is de nieuwe en betaalbare kapper in Nieuwegein en Werkendam">
   <link type="text/plain" rel="author" href="humans.txt">
   <meta name="author" content="lekkerduidelijk.nl">
@@ -175,23 +175,19 @@ $devmode = false;
             <h1>Locaties</h1>
             <p>
               kappr vind je in de wijk Galecop in Nieuwegein, net achter het
-              wijkwinkelcentrum en in het centrum van Werkendam.
+              wijkwinkelcentrum.
               In de directe omgeving van de salons is gratis parkeergelegenheid.
             </p>
             <div id="map">
               <aside>
                 <h2 id="logosmall" class="ir" title="kappr">kappr</h2>
                 <address id="location1">
-                  Abraham Kuyperpark 172<br>
+                  <br>
+                Abraham Kuyperpark 172<br>
                   3437 JD Nieuwegein
                 </address>
                 <span title="Telefoon nummer">T: 030 6021675</span><br>
                 <br>
-                <address id="location2">
-                  Hoogstraat 107<br>
-                  4251 CK Werkendam
-                </address>
-                <span title="Telefoon nummer">T: 0183 503927</span><br>
                 <div id="opening">
                   <h2>Openingstijden</h2>
                   <p>
@@ -215,8 +211,7 @@ $devmode = false;
             <p>
               <strong>Vragen?</strong> Stuur ons een e-mail op
               <a href="mailto:mail@kappr.nl" title="Neem contact op via e-mail">mail@kappr.nl</a>
-              of bel direct naar <em title="Telefoon nummer Nieuwegein">030 6021675</em> (Nieuwegein)<br>
-              <em title="Telefoon nummer Werkendam">0183 503927</em> (Werkendam)
+              of bel direct naar <em title="Telefoon nummer Nieuwegein">030 6021675</em><br>
             </p>
           </div>
         </section>
@@ -236,5 +231,18 @@ $devmode = false;
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '5175ac08108d7b14de0000b8');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
 </body>
 </html>
