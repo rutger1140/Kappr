@@ -41,7 +41,7 @@ $devmode = false;
         <li><a href="#top" title="De nieuwe en betaalbare kapper">Over ons</a></li>
         <li><a href="#prijzen" title="Bij kappr weet je waar je aan toe bent">Prijzen</a></li>
         <li><a href="#producten" title="Bij kappr werken we met Wella Professionals">Producten</a></li>
-        <li><a href="#locatie" title="kappr vind je in de wijk Galecop in Nieuwegein">Locaties</a></li>
+        <li><a href="#locatie" title="kappr vind je in de wijk Galecop in Nieuwegein">Locatie</a></li>
         <li><a href="#contact" title="Stuur ons een e-mail of bel 030 6021675">Contact</a></li>
       </ul>
     </nav>
@@ -172,7 +172,7 @@ $devmode = false;
       <section id="locatie" class="chapter">
         <section class="content">
           <div class="wrap">
-            <h1>Locaties</h1>
+            <h1>Locatie</h1>
             <p>
               kappr vind je in de wijk Galecop in Nieuwegein, net achter het
               wijkwinkelcentrum.
@@ -183,7 +183,7 @@ $devmode = false;
                 <h2 id="logosmall" class="ir" title="kappr">kappr</h2>
                 <address id="location1">
                   <br>
-                Abraham Kuyperpark 172<br>
+                  Abraham Kuyperpark 172<br>
                   3437 JD Nieuwegein
                 </address>
                 <span title="Telefoon nummer">T: 030 6021675</span><br>

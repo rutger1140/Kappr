@@ -278,11 +278,10 @@ $(function() {
 
 });
 
-var map,mapcenter,zoomlevel,marker1,marker2;
+var map,mapcenter,zoomlevel,marker1;
 
 function GmapInit() {
   kapprnieuwegein = new google.maps.LatLng(52.053902,5.079439);
-  kapprwerkendam =  new google.maps.LatLng(51.813616,4.891083);
 
   mapcenter = new google.maps.LatLng(51.938339,4.639478);
   zoomlevel = 9;
@@ -312,13 +311,6 @@ function GmapInit() {
     position: kapprnieuwegein,
     icon:kapprIcon
   });
-  marker2 = new google.maps.Marker({
-    map:map,
-    draggable:false,
-    animation: google.maps.Animation.DROP,
-    position: kapprwerkendam,
-    icon:kapprIcon
-  });
 
   $("#locatie").addClass("hasmap");
 
@@ -330,23 +322,12 @@ $("#logosmall").click(function(){
   map.panTo(mapcenter);
   map.setZoom(zoomlevel);
 })
-/*
-$("#map").waypoint(function(event,direction){
 
-  setTimeout(animateMarker1, '500');
-  setTimeout(animateMarker2, '800');
-})
-*/
 function animateMarker1(){
   marker1.setAnimation(google.maps.Animation.DROP);
 }
-function animateMarker2(){
-  marker2.setAnimation(google.maps.Animation.DROP);
-}
 
 $("#location1").mouseover(function(){ animateMarker1(); });
-$("#location2").mouseover(function(){ animateMarker2(); });
-
 
 function GmapLoad() {
   var script = document.createElement("script");
