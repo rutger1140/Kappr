@@ -67,11 +67,10 @@ $devmode = false;
       <section id="overons" class="chapter">
         <section class="content">
           <hgroup class="wrap">
-            <h1>De nieuwe en <em>betaalbare</em> kapper!</h1>
+            <h1>De <em>nieuwe</em> kapper!</h1>
             <h2>
-              Bij kappr houden we niet van fratsen. Gewoon een mooi kapsel
-              voor een betaalbare prijs.
-              Je bent <em>altijd</em> welkom, met en zonder afspraak.
+              Bij kappr houden we niet van fratsen. Er goed uitzien is waar we voor staan.
+              Je bent <em>altijd</em> welkom met en zonder afspraak.
             </h2>
           </hgroup>
         </section>
@@ -280,12 +279,13 @@ $devmode = false;
           <div class="wrap">
             <h1>Locatie</h1>
             <p>
-              kappr vind je in de wijk Galecop in Nieuwegein, net achter het
+              Kappr Nieuwegein vind je in de wijk Galecop in Nieuwegein, net achter het
               wijkwinkelcentrum.
               In de directe omgeving van de salons is gratis parkeergelegenheid.
             </p>
             <p>
-              Kappr IJsselstein vindt u Voorstraat 12a in het centrum van het stadje. parkeren kan je het best in de parkeer garage Eiteren.
+              Kappr IJsselstein vindt u Voorstraat 12a in het centrum van het stadje.
+              Parkeren kan je het best in de parkeer garage Eiteren.
             <p>
             <div id="map">
               <aside>
@@ -298,7 +298,7 @@ $devmode = false;
                 <address id="location2">
                   Voorstraat 12a<br>
                   3401 Dc IJsselstein<br>
-                  <span title="Telefoon nummer">T: 030-68 88 471</span><br>
+                  <span title="Telefoon nummer">T: 030 6888471</span><br>
                 </address>
                 <br>
                 <div id="opening">
@@ -324,7 +324,7 @@ $devmode = false;
             <p>
               <strong>Vragen?</strong> Stuur ons een e-mail op
               <a href="mailto:mail@kappr.nl" title="Neem contact op via e-mail">mail@kappr.nl</a>
-              of bel direct naar <em title="Telefoon nummer Nieuwegein">030 6021675</em><br>
+              of bel direct naar <em title="Telefoon nummer Nieuwegein">030 6021675</em> of <em title="Telefoon nummer IJsselstein">030 6888471</em><br>
             </p>
           </div>
         </section>
