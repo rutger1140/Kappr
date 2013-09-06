@@ -66,13 +66,13 @@ $devmode = false;
     <div id="main" role="main">
       <section id="overons" class="chapter">
         <section class="content">
-          <hgroup class="wrap">
+          <header class="wrap">
             <h1>De <em>nieuwe</em> kapper!</h1>
             <h2>
               Bij kappr houden we niet van fratsen. Er goed uitzien is waar we voor staan.
               Je bent <em>altijd</em> welkom met en zonder afspraak.
             </h2>
-          </hgroup>
+          </header>
         </section>
         <div id="fill1" class="fill"><div class="fillmask"></div><div id="fill1-scissor"></div><div id="fill1-dashedline"></div><div id="fill1-shapes2"></div><div id="fill1-shapes1"></div></div>
       </section>
