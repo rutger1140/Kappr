@@ -288,17 +288,8 @@ $(function() {
     $("ul.tabs li").removeClass("active");
     $this.addClass("active");
 
-
-    //$(".pricedata-content").fadeOut();
-
-    $(".pricedata-content").not(activeTab).animate({
-      top: "+50px",
-      opacity: 0
-    }, 600);
-    $(activeTab).fadeIn().css({
-      top: "30px",
-      opacity: 1
-    });
+    $(".pricedata-content").hide();
+    $(activeTab).show();
 
     return false;
   });

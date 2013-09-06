@@ -123,7 +123,7 @@ $devmode = false;
                       <h2>Kleurspoeling</h2>
                       <h3>&euro; 22,50</h3>
                     </div>
-                    <em class="product-description">Tijdelijke kleuring/opfrissen van uw kleur max. 12 keer wassen</em>
+                    <em class="product-description">Tijdelijke kleuring / opfrissen van uw kleur max. 12 keer wassen</em>
                   </li>
                   <li class="product">
                     <div class="product-title">
@@ -223,7 +223,7 @@ $devmode = false;
                       <h2>Kleuren compleet vanaf</h2>
                       <h3>&euro; 61,00</h3>
                     </div>
-                    <em class="product-description">Wassen, knippen, kleuren, masker &amp; afwerken  (wella Professionals producten)</em>
+                    <em class="product-description">Wassen, knippen, kleuren, masker &amp; afwerken  (Wella Professionals producten)</em>
                   </li>
 
                   <li class="product">
