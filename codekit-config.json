@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8300",
+  "creatorBuild" : "8322",
   "files" : {
     "\/img\/fill1-dashedline.png" : {
       "ignoreWasSetByUser" : 0,
@@ -8,31 +8,9 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill1-dashedline.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill1-dashedline.png",
       "initialSize" : 5720,
-      "fileType" : 8192
-    },
-    "\/img\/fill1-shapes1.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/fill1-shapes1.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/fill1-shapes1.png",
-      "initialSize" : 9369,
-      "fileType" : 8192
-    },
-    "\/img\/fillmask.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/fillmask.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/fillmask.png",
-      "initialSize" : 1509,
       "fileType" : 8192
     },
     "\/img\/fill3-circles.png" : {
@@ -41,9 +19,31 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill3-circles.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill3-circles.png",
       "initialSize" : 5554,
+      "fileType" : 8192
+    },
+    "\/img\/fillmask.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/fillmask.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/fillmask.png",
+      "initialSize" : 1509,
+      "fileType" : 8192
+    },
+    "\/img\/fill1-shapes1.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/fill1-shapes1.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/fill1-shapes1.png",
+      "initialSize" : 9369,
       "fileType" : 8192
     },
     "\/img\/block.png" : {
@@ -52,7 +52,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/block.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/block.png",
       "initialSize" : 4039,
       "fileType" : 8192
@@ -63,7 +63,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/logosmall.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/logosmall.png",
       "initialSize" : 1944,
       "fileType" : 8192
@@ -74,7 +74,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill4-circle2.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill4-circle2.png",
       "initialSize" : 76681,
       "fileType" : 8192
@@ -96,7 +96,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill4.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill4.jpg",
       "initialSize" : 17028,
       "fileType" : 4096
@@ -107,7 +107,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill1.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill1.jpg",
       "initialSize" : 20018,
       "fileType" : 4096
@@ -127,7 +127,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/priceblock.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/priceblock.png",
       "initialSize" : 4638,
       "fileType" : 8192
@@ -149,7 +149,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill2-lines.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill2-lines.jpg",
       "initialSize" : 37556,
       "fileType" : 4096
@@ -160,7 +160,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill1-scissor.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill1-scissor.png",
       "initialSize" : 1799,
       "fileType" : 8192
@@ -182,7 +182,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill1-shapes2.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill1-shapes2.png",
       "initialSize" : 5077,
       "fileType" : 8192
@@ -193,20 +193,9 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/pricetags.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/pricetags.jpg",
       "initialSize" : 28638,
-      "fileType" : 4096
-    },
-    "\/img\/footer-shadow.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/footer-shadow.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/footer-shadow.jpg",
-      "initialSize" : 1510,
       "fileType" : 4096
     },
     "\/img\/fill2-comb.png" : {
@@ -215,7 +204,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill2-comb.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill2-comb.png",
       "initialSize" : 2952,
       "fileType" : 8192
@@ -226,10 +215,21 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/mapicon.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/mapicon.png",
       "initialSize" : 1566,
       "fileType" : 8192
+    },
+    "\/img\/footer-shadow.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/footer-shadow.jpg",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/footer-shadow.jpg",
+      "initialSize" : 1510,
+      "fileType" : 4096
     },
     "\/img\/mapaside-trans.png" : {
       "ignoreWasSetByUser" : 0,
@@ -237,7 +237,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/mapaside-trans.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/mapaside-trans.png",
       "initialSize" : 932,
       "fileType" : 8192
@@ -248,7 +248,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill3.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill3.jpg",
       "initialSize" : 28895,
       "fileType" : 4096
@@ -270,10 +270,19 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/products-foot.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/products-foot.png",
       "initialSize" : 1221,
       "fileType" : 8192
+    },
+    "\/googlec31e0ba5b8b00817.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/googlec31e0ba5b8b00817.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/img\/fill4-circlesharp.png" : {
       "ignoreWasSetByUser" : 0,
@@ -281,7 +290,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill4-circlesharp.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill4-circlesharp.png",
       "initialSize" : 5355,
       "fileType" : 8192
@@ -298,15 +307,19 @@
       "fileType" : 64
     },
     "\/css\/style.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
+      "ieCompatibility" : 1,
       "inputAbbreviatedPath" : "\/css\/style.less",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/style.css",
+      "outputPathIsSetByUser" : 1,
+      "strictUnits" : 0,
+      "relativeURLS" : 0,
+      "ignore" : 0,
       "strictImports" : 0,
+      "ignoreWasSetByUser" : 0,
+      "shouldRunBless" : 0,
+      "hidden" : 0,
+      "strictMath" : 0,
+      "outputStyle" : 2,
       "fileType" : 1,
       "debugStyle" : 0
     },
@@ -316,7 +329,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/logo.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/logo.png",
       "initialSize" : 5806,
       "fileType" : 8192
@@ -327,7 +340,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill4-circle1.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill4-circle1.png",
       "initialSize" : 38593,
       "fileType" : 8192
@@ -338,7 +351,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill2.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill2.jpg",
       "initialSize" : 28018,
       "fileType" : 4096
@@ -354,15 +367,15 @@
       "outputAbbreviatedPath" : "\/js\/libs\/modernizr-2.5.3.min-ck.js",
       "fileType" : 64
     },
-    "\/img\/fill3-care.png" : {
+    "\/img\/fill3-styling.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/fill3-care.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/fill3-care.png",
-      "initialSize" : 6774,
+      "inputAbbreviatedPath" : "\/img\/fill3-styling.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/fill3-styling.png",
+      "initialSize" : 5879,
       "fileType" : 8192
     },
     "\/js\/libs\/modernizr-2.5.2.min.js" : {
@@ -376,15 +389,15 @@
       "outputAbbreviatedPath" : "\/js\/libs\/modernizr-2.5.2.min-ck.js",
       "fileType" : 64
     },
-    "\/img\/fill3-styling.png" : {
+    "\/img\/fill3-care.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/fill3-styling.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/fill3-styling.png",
-      "initialSize" : 5879,
+      "inputAbbreviatedPath" : "\/img\/fill3-care.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/fill3-care.png",
+      "initialSize" : 6774,
       "fileType" : 8192
     },
     "\/img\/fill4-circleblur.png" : {
@@ -393,7 +406,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/fill4-circleblur.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/fill4-circleblur.png",
       "initialSize" : 9394,
       "fileType" : 8192
@@ -404,7 +417,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/mapcanvas.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/mapcanvas.jpg",
       "initialSize" : 69559,
       "fileType" : 4096
@@ -459,7 +472,10 @@
     "sassAutoOutputPathStyle" : 2,
     "stylusAutoOutputPathReplace2" : "css",
     "lessAutoOutputPathStyle" : 0,
+    "lessIECompatibility" : 1,
     "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+    "lessStrictUnits" : 0,
+    "lessStrictMath" : 0,
     "coffeeMinifyOutput" : 1,
     "javascriptOutputSuffix" : "-ck",
     "jadeOutputStyle" : 0,
@@ -608,6 +624,7 @@
     "jadeCompileDebug" : 1,
     "slimRailsCompatible" : 0,
     "kitAutoOutputPathReplace2" : "",
+    "lessRelativeURLS" : 0,
     "lessDebugStyle" : 0,
     "javascriptAutoOutputPathRelativePath" : "",
     "slimAutoOutputPathStyle" : 0

@@ -67,8 +67,10 @@ $(function() {
     event.preventDefault();
 
     var $this = $(this),
-    target = this.hash,
-    $target = $(target);
+        target = this.hash,
+        $target = $(target);
+
+    if(!target.indexOf("#prijzen-")) return;
 
     $(scrollElement).stop().animate({
       'scrollTop': $target.offset().top
@@ -273,17 +275,45 @@ $(function() {
   }
   // END TOUCH DISABLED
 
+  // Toggle tabs
+
+  $(".pricedata-content").hide();
+  $("ul.tabs li:first").addClass("active").show();
+  $(".pricedata-content:first").show();
+
+  $("ul.tabs li").click(function() {
+    var $this = $(this),
+        activeTab  = $this.find("a").attr("href");
+
+    $("ul.tabs li").removeClass("active");
+    $this.addClass("active");
+
+
+    //$(".pricedata-content").fadeOut();
+
+    $(".pricedata-content").not(activeTab).animate({
+      top: "+50px",
+      opacity: 0
+    }, 600);
+    $(activeTab).fadeIn().css({
+      top: "30px",
+      opacity: 1
+    });
+
+    return false;
+  });
 
 
 
 });
 
-var map,mapcenter,zoomlevel,marker1;
+var map,mapcenter,zoomlevel,marker1,marker2;
 
 function GmapInit() {
   kapprnieuwegein = new google.maps.LatLng(52.053902,5.079439);
+  kapprijsselstein = new google.maps.LatLng(52.01986,5.045171);
 
-  mapcenter = new google.maps.LatLng(51.938339,4.639478);
+  mapcenter = new google.maps.LatLng(52.038339,4.739478);
   zoomlevel = 9;
   myOptions = {
     zoom: zoomlevel,
@@ -311,6 +341,13 @@ function GmapInit() {
     position: kapprnieuwegein,
     icon:kapprIcon
   });
+  marker2 = new google.maps.Marker({
+    map:map,
+    draggable:false,
+    animation: google.maps.Animation.DROP,
+    position: kapprijsselstein,
+    icon:kapprIcon
+  });
 
   $("#locatie").addClass("hasmap");
 
@@ -326,8 +363,12 @@ $("#logosmall").click(function(){
 function animateMarker1(){
   marker1.setAnimation(google.maps.Animation.DROP);
 }
+function animateMarker2(){
+  marker2.setAnimation(google.maps.Animation.DROP);
+}
 
 $("#location1").mouseover(function(){ animateMarker1(); });
+$("#location2").mouseover(function(){ animateMarker2(); });
 
 function GmapLoad() {
   var script = document.createElement("script");
