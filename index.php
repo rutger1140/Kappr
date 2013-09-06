@@ -189,7 +189,7 @@ $devmode = false;
                   </li>
                   <li class="product">
                     <div class="product-title">
-                      <h2>Kind knippen t/m 16 jaar</h2>
+                      <h2>Knippen t/m 16 jaar</h2>
                       <h3>&euro; 17,50</h3>
                     </div>
                     <em class="product-description">Wassen &amp; knippen</em>
