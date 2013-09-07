@@ -21,8 +21,8 @@ $devmode = false;
 <html class="no-js" lang="nl">
 <head>
   <meta charset="utf-8">
-  <title>kappr ~ de nieuwe en betaalbare kapper in Nieuwegein</title>
-  <meta name="description" content="kappr is de nieuwe en betaalbare kapper in Nieuwegein en Werkendam">
+  <title>kappr ~ er goed uitzien! De nieuwe kapper in Nieuwegein en IJsselstein</title>
+  <meta name="description" content="kappr is de nieuwe kapper in Nieuwegein en IJsselstein">
   <link type="text/plain" rel="author" href="humans.txt">
   <meta name="author" content="lekkerduidelijk.nl">
   <meta name="viewport" content="width=900,maximum-scale=1.0">
@@ -52,25 +52,25 @@ $devmode = false;
   <!--[if lt IE 7]><iframe src="http://fronteers.nl/_tmp/ie6-upgrade/" frameborder="no" style="height: 81px; width: 100%; border: none;"></iframe><![endif]-->
   <div id="wrap">
     <header id="top">
-      <figure id="logo"><img src="img/logo.png" alt="kappr - de betaalbare kapper!"></figure>
+      <figure id="logo"><img src="img/logo.png" alt="kappr - er goed uitzien"></figure>
     </header>
     <nav role="navigation" id="access">
       <ul>
-        <li><a href="#top" title="De nieuwe en betaalbare kapper">Over ons</a></li>
+        <li><a href="#top" title="De nieuwe kapper">Over ons</a></li>
         <li><a href="#prijzen" title="Bij kappr weet je waar je aan toe bent">Prijzen</a></li>
         <li><a href="#producten" title="Bij kappr werken we met Wella Professionals">Producten</a></li>
-        <li><a href="#locatie" title="kappr vind je in de wijk Galecop in Nieuwegein">Locatie</a></li>
-        <li><a href="#contact" title="Stuur ons een e-mail of bel 030 6021675">Contact</a></li>
+        <li><a href="#locatie" title="kappr vind je in de wijk Galecop in Nieuwegein en in IJsselstein">Locatie</a></li>
+        <li><a href="#contact" title="Stuur ons een e-mail of bel">Contact</a></li>
       </ul>
     </nav>
     <div id="main" role="main">
       <section id="overons" class="chapter">
         <section class="content">
           <header class="wrap">
-            <h1>De <em>nieuwe</em> kapper!</h1>
+            <h1>De <em>nieuwe</em> kapper bij jou in de buurt</h1>
             <h2>
-              Bij kappr houden we niet van fratsen. Er goed uitzien is waar we voor staan.
-              Je bent <em>altijd</em> welkom met en zonder afspraak.
+              Bij kappr houden we niet van fratsen. Gewoon er goed uitzien voor een redelijke prijs.
+              Je bent bij ons <em>altijd</em> welkom met en zonder afspraak!
             </h2>
           </header>
         </section>
