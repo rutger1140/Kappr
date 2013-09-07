@@ -24,13 +24,13 @@ $(function() {
     "img/logosmall.png","img/mapaside-trans.png","img/mapcanvas.jpg",
     "img/mapicon.png","img/pricetags.jpg","img/products-foot.png"
   ], {
-    init: function(loaded, total) {
+    /*init: function(loaded, total) {
       //$("#loading").html("Laden... "+loaded+"/"+total);
     },
     loaded: function(img, loaded, total) {
       //$("#loading").html("Laden... "+loaded+"/"+total);
-    },
-    loaded_all: function(loaded, total) {
+    },*/
+    loaded_all: function() {
 
       $("#loading").delay(900).animate({
         marginTop:'400px',
@@ -40,7 +40,7 @@ $(function() {
       $("#loader").delay(900).fadeOut(1500,function(){
         //$("#wrap").height($(document).height());
         $("#wrap").hide().css({visibility:'visible'}).fadeIn(1500);
-      })
+      });
       $("body").removeClass("loading");
       /* Google Maps */
       GmapLoad();
@@ -54,7 +54,7 @@ $(function() {
   $('html, body').each(function () {
     var initScrollTop = $(this).attr('scrollTop');
     $(this).attr('scrollTop', initScrollTop + 1);
-    if ($(this).attr('scrollTop') == initScrollTop + 1) {
+    if ($(this).attr('scrollTop') === initScrollTop + 1) {
       scrollElement = this.nodeName.toLowerCase();
       $(this).attr('scrollTop', initScrollTop);
       return false;
@@ -66,11 +66,12 @@ $(function() {
   $("a[href^='#']").click(function(event) {
     event.preventDefault();
 
-    var $this = $(this),
-        target = this.hash,
+    var target = this.hash,
         $target = $(target);
 
-    if(!target.indexOf("#prijzen-")) return;
+    if(!target.indexOf("#prijzen-")) {
+      return;
+    }
 
     $(scrollElement).stop().animate({
       'scrollTop': $target.offset().top
@@ -125,7 +126,7 @@ $(function() {
         $('#fill1-scissor').css({
           "top" : -30 + (offset/1.6),
           "left" : (44+(offset/30))+"%"
-        })
+        });
       }
 
       if(offset>=100 && offset <150 ){
@@ -216,7 +217,7 @@ $(function() {
         $('#fill1-scissor').css({
           "top" : -30 + (offset/1.6),
           "left" : (38+(offset/75))+"%"
-        })
+        });
       }
 
       if(offset>=610 && offset <750 ){
@@ -236,7 +237,9 @@ $(function() {
       if (direction === "up") {
         $active = $active.prev('.chapter');
       }
-      if (!$active.length) $active = $active.end();
+      if (!$active.length) {
+        $active = $active.end();
+      }
 
       $('.section-active').removeClass('section-active');
       $active.addClass('section-active');
@@ -298,7 +301,7 @@ $(function() {
 
 });
 
-var map,mapcenter,zoomlevel,marker1,marker2;
+var google,map,myOptions,mapcenter,zoomlevel,marker1,marker2,kapprnieuwegein,kapprijsselstein;
 
 function GmapInit() {
   kapprnieuwegein = new google.maps.LatLng(52.053902,5.079439);
@@ -320,7 +323,7 @@ function GmapInit() {
       position: google.maps.ControlPosition.RIGHT_BOTTOM
     },
     mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
+  };
   map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
 
   var kapprIcon = "img/mapicon.png";
@@ -349,7 +352,7 @@ function GmapInit() {
 $("#logosmall").click(function(){
   map.panTo(mapcenter);
   map.setZoom(zoomlevel);
-})
+});
 
 function animateMarker1(){
   marker1.setAnimation(google.maps.Animation.DROP);
