@@ -39,7 +39,7 @@ $(function() {
 
       $("#loader").delay(900).fadeOut(1500,function(){
         //$("#wrap").height($(document).height());
-        $("#wrap").hide().css({visibility:'visible'}).fadeIn(2500);
+        $("#wrap").hide().css({visibility:'visible'}).fadeIn(1500);
       })
       $("body").removeClass("loading");
       /* Google Maps */
