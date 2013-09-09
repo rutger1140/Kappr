@@ -111,7 +111,7 @@ $devmode = false;
                   </li>
                   <li class="product">
                     <div class="product-title">
-                      <h2>Kind knippen t/m 16 jaar</h2>
+                      <h2>Knippen t/m 16 jaar</h2>
                       <h3>&euro; 17,50</h3>
                     </div>
                     <em class="product-description">Wassen &amp; knippen</em>
@@ -284,7 +284,7 @@ $devmode = false;
               In de directe omgeving van de salons is gratis parkeergelegenheid.
             </p>
             <p>
-              Kappr IJsselstein vindt u Voorstraat 12a in het centrum van het stadje.
+              Kappr IJsselstein vind je aan de Voorstraat 12a in het centrum van het stadje.
               Parkeren kan je het best in de parkeer garage Eiteren.
             <p>
             <div id="map">
@@ -293,12 +293,12 @@ $devmode = false;
                 <address id="location1">
                   Abraham Kuyperpark 172<br>
                   3437 JD Nieuwegein<br>
-                  <span title="Telefoon nummer">T: 030 6021675</span>
+                  <span title="Telefoon nummer">T: 030 60 21 675</span>
                 </address>
                 <address id="location2">
                   Voorstraat 12a<br>
                   3401 Dc IJsselstein<br>
-                  <span title="Telefoon nummer">T: 030 6888471</span><br>
+                  <span title="Telefoon nummer">T: 030 68 88 471</span><br>
                 </address>
                 <br>
                 <div id="opening">
@@ -324,7 +324,7 @@ $devmode = false;
             <p>
               <strong>Vragen?</strong> Stuur ons een e-mail op
               <a href="mailto:mail@kappr.nl" title="Neem contact op via e-mail">mail@kappr.nl</a>
-              of bel direct naar <em title="Telefoon nummer Nieuwegein">030 6021675</em> of <em title="Telefoon nummer IJsselstein">030 6888471</em><br>
+              of bel direct naar Nieuwegein: <em title="Telefoon nummer Nieuwegein">030 60 21 675</em> of IJsselstein: <em title="Telefoon nummer IJsselstein">030 68 88 471</em><br>
             </p>
           </div>
         </section>
