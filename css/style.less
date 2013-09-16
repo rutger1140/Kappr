@@ -259,11 +259,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     }
 
     #locatie{
-      height:1400px; /* 690 + 410 */
+      height:1400px + 140px; /* 690 + 410 */
     }
     #locatie .wrap{ }
     #locatie .content{
-      height:660px;
+      height:810px;
     }
 
     #contact{
@@ -405,7 +405,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 
 .pricedata {
   @shadow: 0 2px 3px fade(#ccc, 20%); //, 0 5px 3px 0 #eee;
-  // .box-shadow(0 0 3px #ccc);
   .box-shadow(@shadow);
   background: #fff;
   border: 1px solid #dedfe1;
@@ -549,9 +548,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     }
 
     #map{
-      background:url(../img/block.png) no-repeat top left;
+      @shadow: 0 2px 3px fade(#ccc, 20%); //, 0 5px 3px 0 #eee;
+      .box-shadow(@shadow);
+      background: #fff;
+      border: 1px solid #dedfe1;
       width:758px; /* 784 */
-      height:389px; /* 423 */
+      height:521px; /* 423 */
       padding:16px 12px 14px 14px;
       margin-top:40px;
       position:absolute;
@@ -560,7 +562,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     #mapcanvas{
       position:absolute;
       width:754px;
-      height:377px;
+      height:377px+140px;
       z-index:30;
     }
     #mapcanvas{
@@ -572,7 +574,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
     aside{
       background:url(../img/mapaside-trans.png) repeat;
       width:200px;
-      height:337px;
+      height:337px+150px;
       padding:20px;
     }
       aside h2{
@@ -586,13 +588,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
         margin-bottom: 15px;
       }
 
-    #opening{}
-    #opening p{
-      width:auto;
-      text-align:left;
-      margin:0 0 5px 0;padding:0;
+    .opening{}
+    .openinghours{
+      font-size: 14px;
     }
-    #opening h2{
+    .opening h2{
       margin-top:0;
       margin-bottom:5px;
       font-size:18px;
@@ -719,6 +719,22 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 /* =Helper classes
  ******************************************************************************/
   .ir{display:block;border:0;text-indent:-999em;overflow:hidden;background-color:transparent;background-repeat:no-repeat;text-align:left;direction:ltr;*line-height:0}.ir br{display:none}.hidden{display:none!important;visibility:hidden}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.invisible{visibility:hidden}.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}
+
+.debug() {
+  border: 1px solid red;
+}
+// Micro clearfix - lrdk.nl/ck
+.cf() {
+  zoom: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
 
 /* =Print
  ******************************************************************************/

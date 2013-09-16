@@ -307,8 +307,8 @@ function GmapInit() {
   kapprnieuwegein = new google.maps.LatLng(52.053902,5.079439);
   kapprijsselstein = new google.maps.LatLng(52.01986,5.045171);
 
-  mapcenter = new google.maps.LatLng(52.038339,4.739478);
-  zoomlevel = 9;
+  mapcenter = new google.maps.LatLng(52.038339,4.939478);
+  zoomlevel = 10;
   myOptions = {
     zoom: zoomlevel,
     center: mapcenter,
@@ -333,14 +333,26 @@ function GmapInit() {
     draggable:false,
     animation: google.maps.Animation.DROP,
     position: kapprnieuwegein,
-    icon:kapprIcon
+    icon:kapprIcon,
+    title: "kappr Nieuwegein routebeschrijving"
   });
   marker2 = new google.maps.Marker({
     map:map,
     draggable:false,
     animation: google.maps.Animation.DROP,
     position: kapprijsselstein,
-    icon:kapprIcon
+    icon:kapprIcon,
+    title: "kappr IJsselstein routebeschrijving"
+  });
+
+  // Open window to location
+  google.maps.event.addListener(marker1, 'click', function(){
+    window.open("https://maps.google.nl/maps?q=Abraham+Kuyperpark+172+3437+JD+Nieuwegein", "_blank");
+  });
+
+  // Open window to location
+  google.maps.event.addListener(marker2, 'click', function(){
+    window.open("https://maps.google.nl/maps?q=Voorstraat+12a+3401+DC+IJsselstein", "_blank");
   });
 
   $("#locatie").addClass("hasmap");

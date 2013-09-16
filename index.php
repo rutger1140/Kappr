@@ -290,26 +290,42 @@ $devmode = false;
             <div id="map">
               <aside>
                 <h2 id="logosmall" class="ir" title="kappr">kappr</h2>
+
                 <address id="location1">
+                  <strong>kappr Nieuwegein</strong><br>
                   Abraham Kuyperpark 172<br>
                   3437 JD Nieuwegein<br>
                   <span title="Telefoon nummer">T: 030 60 21 675</span>
                 </address>
+                <div class="openinghours">
+                  <em>Openingstijden</em><br>
+                  maandag gesloten<br>
+                  di t/m do 9.00 - 17.30<br>
+                  vrijdag 9.00 - 20.00<br>
+                  zaterdag 9.00 - 16.30
+                </div>
+                <hr>
                 <address id="location2">
+                  <strong>kappr IJsselstein</strong><br>
+
                   Voorstraat 12a<br>
                   3401 Dc IJsselstein<br>
                   <span title="Telefoon nummer">T: 030 68 88 471</span><br>
                 </address>
-                <br>
-                <div id="opening">
-                  <h2>Openingstijden</h2>
-                  <p>
-                    maandag gesloten<br>
-                    di t/m do 9.00-17.30<br>
-                    vrijdag 9.00-20.00<br>
-                    zaterdag 9.00-16.30<br>
-                  </p>
-                </div>
+                <div class="openinghours">
+                  <em>Openingstijden</em><br>
+                  maandag  13.00 - 18.00<br>
+                  di t/m do 9.00 - 18.00<br>
+                  vrijdag 9.00 - 21.00<br>
+                  zaterdag 9.00 - 17.00
+                </dov>
+
+
+
+
+
+
+
               </aside>
               <div id="mapcanvas"></div>
             </div>
